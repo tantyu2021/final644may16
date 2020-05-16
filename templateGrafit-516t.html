@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template Grafit</title>
+    <link rel="stylesheet" href="css/templateGrid1.css" type="text/css" />
+<style>     
+/*  Code for this page - css embedded */
+* {
+      padding: 0;
+      margin: 0;
+      /* box-sizing: border-box; */
+        }
+        /* 516+ */
+.header, .nav, .nav ul li  {
+    background-color:#372f30  ;
+}
+body {font-family: sans-serif;}
+
+main { margin: 0 auto; }
+
+.article12 {background-color: whitesmoke;}
+.article12 .flex div{ background-color: #fff;}
+
+ /* grid code for mobile first */
+ /* =====PAGE - #1 - MOBILE FIRST ================
+ ================================================ */
+.boxes { border: solid 8px #fff;   
+            display: grid;
+            grid-gap: 7px;
+            grid-template-columns: 20% 80% ; /*repeat(2, 1fr);*/
+            grid-template-rows: auto auto 100px auto auto auto 70px 30px 70px auto 50px;
+        }
+
+/*  mobile grid */
+        .header     {grid-row: 1 / 2; grid-column: 1/-1;}
+        .login1     {grid-row: 2 / 3; grid-column: 1/-1;} 
+        .nav        {grid-row: 3 / 4; grid-column: 1/-1;}
+        .search     {grid-row: 4 / 5; grid-column: 1/-1;}
+        .carusel    {grid-row: 5 / 6; grid-column: 1 / -1;}
+        .aside1     {grid-row: 7 / 8; grid-column: 1 /2;} 
+        .aside2     {grid-row: 8 / 9; grid-column: 1 /-1;}
+        .article12  {grid-row: 6 / 7; grid-column: 1 / -1;} 
+        .section1   {grid-row: 7 / 8; grid-column: 2 / -1;}
+        .section2   {grid-row: 9 / 10; grid-column: 1 / -1;}
+       .footerLogo  {grid-row: 10 / 11; grid-column: 1/-1;}
+       .login       {grid-row: 11 / 12; grid-column: 1/-1;}
+        .footer3    {grid-row: 12 / 13; grid-column: 1 / -1;}
+
+/*aside, article, section, header, nav, footer {
+border: 1px solid #ccc; }
+ background-color: salmon;-check grid-area  */
+
+/* ------------search - under nav- mobile screen */ 
+.search {
+    margin: 10px 0;  
+}
+.search input {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.7em;
+}
+/* button {
+    background-color: #ccc;
+    border: none; 
+} */
+.searchArticle12 {display: none;}
+/* 516 search */
+#searchProduct {
+  margin: .4em auto 0;
+  /* text-align: center;
+  background-color: #aeaeae; */
+  padding: 10px;
+  width: 70%;
+  /* border-radius: 10px 10px 0 0; */
+}
+#searchProduct input {
+  width: 80%;
+  text-align: center;
+  background-color: #fff;
+}
+
+
+/*  Code for navigation -Mobile*/
+.nav ul {
+    list-style-type: none;
+    /* width: 100%; */
+}
+.nav ul {display: none;}
+.nav li {
+    /* width: 80%;  */
+    border-bottom: solid 1px rgb(173, 164, 164);
+    background-color: #dedede;
+    padding: .5em;
+    text-align: center; 
+}
+.nav li a{
+        display: block;
+        text-align: right; 
+        text-decoration: none; 
+        color:  rgb(173, 164, 164);
+      }
+/* 515for-input-checkbox */
+nav input[type=checkbox] {
+    display: none;}
+nav input[type=checkbox]:checked ~ ul.menu {
+    display: block;}
+
+.showMenu {
+    background-color: #dedede;
+    border-bottom: 1px #fff solid;
+    text-align:right;
+    padding: 1em;
+    color: #000;
+    display: block;
+    cursor: pointer;
+    /* width: 50px; */
+}
+
+    /* .fa-chevron-circle-down {
+    margin-left: .25em;
+    font-size: 1.5em;} */
+
+    /* header span {
+    color: #999;
+    font-size: .8em;
+    margin-right: .25em;} */
+
+.nav li:hover {   
+    background-color: floralwhite; /*   antiquewhite;  #cee002; ;  #cecece; */ 
+} 
+nav label,#hamburger{display: none;} 
+/*  end Code for navigation */ 
+
+.aside0 {display: none;}
+
+/* 516+ for placeholder section1 */
+.section1 ul {display: none;}
+
+
+
+/* =====PAGE -  #2 - mobile landscape SCREEN ================================  */
+/* media quries - for screen more420px */
+@media screen and (min-width: 420px) {
+
+    aside, article, section, header, nav, footer {
+    border: solid 1 px lightblue;      }
+   /*background-color:#ededed; -check grid-area  */
+
+        /* 515 */
+    .flex>div {width: 46%;} 
+    .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+       justify-content: space-between;
+        /* background: #ededed;  */
+        flex-wrap: wrap;
+        /* align-content:flex-start; */
+       }  
+    .flex {float: left;}
+    /* .footer3 {
+        background-color: #cee002;
+    }
+ .flex3>div:last-child {padding-left: 0;}     */
+
+}
+
+
+/* =====PAGE - #3 - MEDIUM SCREEN /tablets===
+============================================== */
+/* media quries - for screen more640px */
+@media screen and (min-width: 640px) {
+
+
+    #asideBox {
+        background-color:whitesmoke ;
+        width: 80%;
+        height: 100px;
+        margin: 5px;
+    }
+    /*  medium screen- grid #3 */
+   .aside0 {display: block;}
+        .aside0     {grid-row: 6 / 7; grid-column: 1 /2;}
+        .article12  {grid-row: 6 / 7; grid-column: 2 / -1;} 
+
+/*  aside, article, section, header, nav, footer {
+border:dotted 1px #dedede; }
+background-color:#d3cbcb;-check grid-area  */
+
+.header {
+    display: flex;
+    /* flex-direction: space-between; */
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+ /*  Code for navigation, large screen */
+ .nav ul {
+        display: flex;
+        flex-direction: row;
+        /* align-items: left; */
+        width: 60%;
+       }    
+
+.nav a.active {
+    color:#fff;
+}
+.nav li:hover {   
+    background-color: #372f30; 
+} 
+.nav li a:hover {
+    color:blueviolet;
+}
+/* from mobile screen */
+ .showMenu {display: none;}
+
+.nav a:visited {color:  gray; }
+.nav label,#hamburger{display: none;}    
+  
+/* end code for nav*/
+
+}
+
+/* =====PAGE - #4 - LARGE SCREEN ==============
+==============================================  */
+/* media quries - for screen more770px */
+/*WAS: @media screen and (min-width: 550px)  */
+
+
+
+@media screen and (min-width: 770px) {  
+
+.search {display: none;}
+.searchArticle12 {display: block;}
+.searchArticle12 input {
+    width: 95%;
+    margin: 15px auto;
+    padding: 0.7em;
+}
+
+    /* 515 */
+    .flex>div {width: 33%;}  
+    .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+       justify-content: space-between;
+        /* background: #ededed;  */
+        flex-wrap: wrap;
+        align-content:flex-start;
+       }  
+    .flex {float: left;}
+
+/* grid -big screen */
+     .boxes {
+            border: solid 8px #fff;
+            /* max-width: 1000px; */
+            margin: 5px auto;
+            display: grid;
+            grid-gap: 2px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto auto 50px auto auto 80px 50px;
+        }
+
+        .search     {grid-row: 2 / 3; grid-column: 1/-1;}
+        .header    {grid-row: 1 / 2; grid-column: 1 / span 12;}
+        .nav       {grid-row: 2 / 3; grid-column: 1 / span 12;}
+        .carusel    {grid-row: 3 / 4; grid-column: 1 / span 12;}
+        .aside0    {grid-row: 4 / 5; grid-column: 1 / span 2;}
+        .aside1    {grid-row: 5 / 6; grid-column: 1 / span 2;}
+        .aside2    {grid-row: 6 / 7; grid-column: 1 / span 2;}
+        .article12  {grid-row: 4 / 5; grid-column: 3 / -1;} 
+        /*516+ .carusel    {grid-row: 4 / 5; grid-column: 1 / span 12;} */
+        .section1   {grid-row: 5 / 6; grid-column: 3 / span 10;}
+        .section2  {grid-row: 6 / 7; grid-column: 3 / -1;}
+        .footer3     {grid-row: 7 / 8; grid-column: 1 / span 12;}
+    .login, .login1, .footerLogo  {display: none;} 
+
+/*   aside, article, section, header, nav, footer {
+ background-color: lightblue;     }  */
+
+
+/* 516+ for placeholder section1 */
+.section1 ul {
+    display: block;
+    list-style-type: none;
+    /* text-align: center; */
+}
+.section1 li {
+    margin: 1em;
+}
+.section1 li {
+        max-width: 25%;
+        float: right;
+    margin-right: .5em;
+    }
+
+} 
+
+
+
+/*=====PAGE - #5 - x-LARGE SCREEN ===========
+============================================= */
+/* media quries - for screen more640px */
+@media screen and (min-width: 1030px) {
+  
+
+main {max-width: 1400px;} 
+
+/* 515 */
+.flex>div {width: 24%;} 
+   
+/* 516+ */
+#asideBox {
+        width: 40%;
+        float: left;
+    }
+   
+    /* .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+       justify-content: space-between;
+        flex-wrap: wrap;
+        align-content:flex-start;
+       }  
+    .flex {float: left;} */
+
+ footer {background-color:#d3cbcb;}
+/* aside, article, section, header, nav, footer {
+background-color:#d3cbcb;}-check grid-area  */
+
+
+}
+
+/*  end CSS for this page */  
+
+</style>
+</head>
+    
+<body>
+    <main>
+  <!-- start container for grid-->    
+    <div class="boxes">
+<header class="header">
+    <!-- header, navigation  -->
+    <br> <a href="#"><img src = "images/logo.png" alt = "LOGO"  class="active" class = "logo"/></a>
+   
+<!-- 515 -->
+<nav class="nav">
+   
+
+    <label for="showMenu" class="showMenu"> &#9776; 
+    <span class="fas fa-chevron-circle-down"></span>
+           </label>
+    <input type="checkbox" id="showMenu" role="button">
+    
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+         <ul class="menu">
+    <!--   <li><a href="index.html">HOME</a></li>-->
+            <li><a href="pages/about.html" class="active">ABOUT</a></li>
+            <li><a href="pages/finance.html">COUPONS</a></li>
+ 
+            <li class="dropdown"><a href="pages/admissions.html"  >SPECIAL</a>
+            </li>
+            
+            <li><a href="pages/calendar.html">ORDER</a></li>
+       
+       </ul>
+       <!-- <div id="container">
+           <h3>HOME</h3>
+       </div> -->
+
+</nav>
+
+</header>
+<!--  start for mobile screen-   -->       
+<nav class="login1">
+   <ul>
+       <li><a href="#">mobileUp</a></li>
+       <li><a href="contact.html">MobileUp2</a></li>        
+  </ul>
+</nav>            
+<nav class="login">
+   <ul>
+       <li><a href="#">mobile input footer</a></li>
+       <li><a href="contact.html">mobile link footer</a></li>        
+  </ul>
+</nav>  
+<!-- end for mobile screen  --> 
+<nav class="nav">
+
+    <div id="searchProduct">
+        <label for="search"></label>
+        <input type="search" name="search" id="searchProduct" placeholder="search product/ enter address">
+      </div>
+</nav>
+<!-- 516 -->
+
+           
+    <!-- <div id="search">
+        <label for="search"></label>
+        <input type="search" name="search" id="search" placeholder="search product">
+      </div> -->
+
+<!-- 516 -->
+<div class="search">search
+    <div class="search">
+        <form action = "https://www.google.com">
+                <label for="search"></label>
+                     <input type = "text" name = "search" id = "search" placeholder = "search"/>
+                        <!-- <button type = "submit">  
+                        </button> -->
+                    </form>   
+                </div>    
+</div>
+
+<aside class="aside0">
+<div id="asideBox">aside0</div>
+<div id="asideBox">aside0</div>
+<div id="asideBox">aside0</div>
+<div id="asideBox">aside0</div>
+<div id="asideBox">aside0</div>
+<div id="asideBox">aside0</div>
+</aside>
+
+<aside class="aside1">aside1</aside>
+ <aside class="aside2">aside2</aside>
+ <section class="carusel">  CARUSEL or <br> SLIDESHOW </section>
+
+<article class="article12">article12
+<!-- 515+ -->
+<div class="searchArticle12">
+    <form action = "https://www.google.com">
+            <label for="search"></label>
+                 <input type = "text" name = "search" id = "searchArticle12" placeholder = "big-search"/>
+                    <!-- <button type = "submit">  
+                    </button> -->
+                </form>   
+            </div>  
+    <!-- 515 -->
+    <div class="flex">
+        <div><h2>Product 1</h2>
+         <p>First stages in a project are very important to understand your client´s needs. With many different tools we approach to our customers the best solutions to know their targets, their audiences and planning from the very first stage each movement to swim the whole team into the same pool </p></div> 
+          <div> <h2>Product 2</h2>
+         <p>Once in the design process, we must go deeper in your project´s foundation, we need to arrive to the essence, the roots in order to understand the future product totally.  With many different tools we approach to our customers the best solutions to know their targets, their audiences and planning from the very first stage each movement to swim the whole team into the same pool. </p></div>
+        <div><h2>Product 3</h2>
+         <p>First stages in a project are very important to understand your client´s needs. With many different tools we approach to our customers the best solutions to knoWe understand markets, our expert mates understand markets, we love markets, have said market? We know them better than nobody. </p></div>
+         <div><h2>Product 4</h2>
+            <p>First stages in a project are very important to understand your client´s needs. With many different tools we approach to our customers the best solutions to know their targets, their audiences and planning from the very first stage each movement to swim the whole team into the same pool </p></div> 
+             <div> <h2>Product 5</h2>
+            <p>Once in the design process, we must go deeper in your project´s foundation, we need to arrive to the essence, the roots in order to understand the future product totally.  With many different tools we approach to our customers the best solutions to know their targets, their audiences and planning from the very first stage each movement to swim the whole team into the same pool. </p></div>
+           <div><h2>Product 6</h2>
+            <p>First stages in a project are very important to understand your client´s needs. With many different tools we approach to our customers the best  solutions to knoWe understand markets, our expert mates understand markets, we love markets, have said market? We know them better than nobody. </p></div>
+            <div> <h2>Product 7</h2>
+                <p>Once in the design process, we must go deeper in your project´s foundation, we need to arrive to the essence, the roots in order to understand the future product totally.  With many different tools we approach to our customers the best solutions to know their targets, their audiences and planning from the very first stage each movement to swim the whole team into the same pool. </p></div>
+               <div><h2>Product 8</h2>
+                <p>First stages in a project are very important to understand your client´s needs. With many different tools we approach to our customers the best  solutions to knoWe understand markets, our expert mates understand markets, we love markets, have said market? We know them better than nobody. </p></div>
+     </div>
+</article>
+
+<!--516+ <section class="carusel">  carusel</section> -->
+<section class="section1">section1 
+    <ul>
+        <li><img src="https://via.placeholder.com/150x150" alt="picture of teammember"></li>
+        <li><img src="https://via.placeholder.com/150x150" alt="picture of teammember"></li>
+        <li><img src="https://via.placeholder.com/150x150" alt="picture of teammember"></li>
+        <li><img src="https://via.placeholder.com/150x150" alt="picture of teammember"></li>
+        <li><img src="https://via.placeholder.com/150x150" alt="picture of teammember"></li>
+        <li><img src="https://via.placeholder.com/150x150" alt="picture of teammember"></li>
+        </ul>
+</section>    
+<section class="section2">section2
+    
+</section>               
+ <div class="footerLogo"> footerLogo
+</div> 
+<footer class="footer3">footer3
+<p>&copy; 2020 - All Rights Reserved</p>             
+ </footer>
+</div><!--end container for grid-->
+</main>
+</body>
+</html>
