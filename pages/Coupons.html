@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template COUPONS</title>
+    <link rel="stylesheet" href="../css/templateGrid1.css" type="text/css" />
+<!-- 517-z-jquery -->
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <!-- 517 jQueryUI add for data & accordion -->
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <!--from jQuery-download-CDN Google CDN - jQuery UI (2 links: css & script) -...for tabs, nav tooltip-->
+ <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+
+
+ <script>
+   $(function() {
+//load
+       $("#service1").click(function() {
+           $("#solution").load("services.html #service1");
+       });
+       $("#service2").click(function() {
+           $("#solution").load("services.html #service2");
+       });
+       $("#service3").click(function() {
+           $("#solution").load("services.html #service3");
+       });
+// get TEAMz
+       $.get("../data/team.xml", function(data) { 
+			$(data).find("management").children().each(function() {
+				$("#team").append("<h3>" + 
+					$(this).find('name').text() + "</h3><p>" + 
+					$(this).find('title').text() + "<br>" +  
+					$(this).find('bio').text() + "</p>");
+			});
+		});
+
+
+//getJSONz
+// $.getJSON('data/json.js', function(data) {
+
+// $.each(data, function() {
+//     $.each(this, function(key, value) {
+//         $("#team").append(
+//             value.name + '<br>' + value.title + '<br>' + value.bio + '<br><br>'
+//         );
+//     });
+// }); 
+// });
+
+//getJson em
+// $.getJSON('../data/01.json', function(data){
+//     console.log(data);
+//   });
+
+  $.getJSON('../data/01.json', function(data){
+    var output = '<ul>';
+    $.each(data, function(key, val){
+      output += '<li>' + val.name + '</li>';
+    });
+    output += '</ul>';
+
+    // $('#update').html(output);
+    $('#update').append(output);
+  });
+
+//add datapicker & accordion, jqueryUI
+$( "#datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true
+          });
+$( "#accordion" ).accordion();
+
+
+//the Tabs widget 
+  $( "#tabs" ).tabs();
+        
+        //accordion	
+     // $( "#accordion" ).accordion();
+     $( "#accordionNew" ).accordion({
+  collapsible: true,
+  heightStyle: "content"
+}); 
+
+   });
+</script>
+
+<style>     
+/*  Code for this page - css embedded */
+
+/*  end CSS for this page */  
+</style>
+</head>
+    
+<body>
+    <main>
+  <!-- start container for grid-->    
+    <div class="boxes">
+<header class="header">
+    <!-- header, navigation  -->
+    <br> <a href="#"><img src = "images/logo.png" alt = "LOGO"  class="active" class = "logo"/></a>
+   
+<!-- 515 -->
+<nav class="nav">
+   
+
+    <label for="showMenu" class="showMenu"> &#9776; 
+    <span class="fas fa-chevron-circle-down"></span>
+           </label>
+    <input type="checkbox" id="showMenu" role="button">
+    
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+         <ul class="menu">
+    <!--   <li><a href="index.html">HOME</a></li>-->
+            <li><a href="pages/about.html" class="active">ABOUT</a></li>
+            <li><a href="pages/finance.html">COUPONS</a></li>
+ 
+            <li class="dropdown"><a href="pages/admissions.html"  >SPECIAL</a>
+            </li>
+            
+            <li><a href="pages/calendar.html">ORDER</a></li>
+       
+       </ul>
+       <!-- <div id="container">
+           <h3>HOME</h3>
+       </div> -->
+
+</nav>
+
+</header>
+<!--  start for mobile screen-   -->       
+<nav class="login1">
+   <ul>
+       <li><a href="#">mobileUp</a></li>
+       <li><a href="contact.html">MobileUp2</a></li>        
+  </ul>
+</nav>            
+<nav class="login">
+   <ul>
+       <li><a href="#">mobile input footer</a></li>
+       <li><a href="contact.html">mobile link footer</a></li>        
+  </ul>
+</nav>  
+<!-- end for mobile screen  --> 
+<div class="lineInfo">
+
+    <div id="searchProduct">
+        <label for="search"></label>
+        <input type="search" name="search" id="searchProduct" placeholder="search product/ enter address">
+      </div>
+</div>
+<!-- 516 -->
+
+           
+    <!-- <div id="search">
+        <label for="search"></label>
+        <input type="search" name="search" id="search" placeholder="search product">
+      </div> -->
+
+<!-- 516 -->
+<div class="search">search
+    <div class="search">
+        <form action = "https://www.google.com">
+                <label for="search"></label>
+                     <input type = "text" name = "search" id = "search" placeholder = "search"/>
+                        <!-- <button type = "submit">  
+                        </button> -->
+                    </form>   
+                </div>    
+</div>
+
+<aside class="aside0">
+    <p>Date: <input type="text" id="datepicker"></p>
+<div id="asideBox">aside0</div>
+<div id="asideBox">aside0</div>
+<div id="asideBox">aside0</div>
+<div id="asideBox">aside0</div>
+<div id="asideBox">aside0</div>
+<div id="asideBox">aside0</div>
+</aside>
+
+<aside class="aside1">aside1</aside>
+ <aside class="aside2">aside2</aside>
+ <section class="carusel">  CARUSEL or <br> SLIDESHOW </section>
+
+<article class="article12">article12
+<!-- 515+ -->
+<div class="searchArticle12">
+    <form action = "https://www.google.com">
+            <label for="search"></label>
+                 <input type = "text" name = "search" id = "searchArticle12" placeholder = "big-search"/>
+                    <!-- <button type = "submit">  
+                    </button> -->
+                </form>   
+            </div>  
+    <!-- 515 -->
+    <div class="flex">
+
+         <div><h2>Product 4</h2>
+            <p>First stages in a project are very important to understand your client´s needs. With many different tools we approach to our customers the best solutions to know their targets, their audiences and planning from the very first stage each movement to swim the whole team into the same pool </p></div> 
+             <div> <h2>Product 5</h2>
+            <p>Once in the design process, we must go deeper in your project´s foundation, we need to arrive to the essence, the roots in order to understand the future product totally.  With many different tools we approach to our customers the best solutions to know their targets, their audiences and planning from the very first stage each movement to swim the whole team into the same pool. </p></div>
+           <div><h2>Product 6</h2>
+            <p>First stages in a project are very important to understand your client´s needs. With many different tools we approach to our customers the best  solutions to knoWe understand markets, our expert mates understand markets, we love markets, have said market? We know them better than nobody. </p></div>
+            <div> <h2>Product 7</h2>
+                <p>Once in the design process, we must go deeper in your project´s foundation, we need to arrive to the essence, the roots in order to understand the future product totally.  With many different tools we approach to our customers the best solutions to know their targets, their audiences and planning from the very first stage each movement to swim the whole team into the same pool. </p></div>
+               <div><h2>Product 8</h2>
+                <p>First stages in a project are very important to understand your client´s needs. With many different tools we approach to our customers the best  solutions to knoWe understand markets, our expert mates understand markets, we love markets, have said market? We know them better than nobody. </p></div>
+
+                
+   <div id="content">
+      <h2>Meet Our Team</h2>
+  <div id="team"></div>
+  </div>
+
+  <div id="update">
+      <h2>Our Services</h2>
+ </div>
+
+  <!-- 517 - load & jQuery from othe .html -->
+  <div id="content">
+      <h2>Our Company Services</h2>
+      <p>Which our Sirvices are you interested about?</p>
+  <a id="service1" href="#">Service 1</a>  
+      <a id="service2" href="#">Service 2</a> 
+      <a id="service3" href="#">Service 3</a>
+      <br>
+  <div id="solution"></div>
+  </div>
+     </div>
+</article>
+
+<!--516+ <section class="carusel">  carusel</section> -->
+<section class="section1">section1 
+<!-- 517 accordion -->
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+          <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+          <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis
+        </div>
+        <h3>Section 3</h3>
+        <div>
+          <p>
+          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac liber
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+          <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          </p>
+          <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+          Class aptent taciti sociosqu ad litora torquent per conubia
+          </p>
+        </div>
+      </div>
+</section> 
+
+<section class="section2" >section2
+    <!-- 517 - load & jQuery from othe .html -->
+    <!-- <div id="content">
+        <h2>Our Company Solutions</h2>
+        <p>Which our Sirvices are you interested about?</p>
+		<a id="service1" href="#">Service 1</a>  
+        <a id="service2" href="#">Service 2</a> 
+        <a id="service3" href="#">Service 3</a>
+        <br>
+		<div id="solution"></div>
+    </div> -->
+ <!-- ACCORDION  -->
+ <div class="flexTab">
+ <div id="accordionNew">
+    <h3>Section 1</h3>
+    <div> <img src="imgProjects/project10.jpg" alt="kindergarten"/>
+        <p>
+            Throughout the years we have worked together, we have always been amazed at the level of dedication and professionalism.
+        </p>
+      </div>
+      <h3>Section 2</h3>
+      <div>
+        <img src="imgProjects/project11.jpg" alt="border post"/>
+        <p> Incredible results from an incredible effort by the  team!
+        </p>
+      </div>
+    <h3>Section 3</h3>
+    <div>
+      <img src="imgProjects/project12.jpg" alt="prom complex"/>
+      <p>   Incredible results from an incredible effort by the  team!
+      </p>
+    </div>
+  </div>
+    <div>
+       <!--  TABS -->     
+       <!-- style="width: 47%;" -->
+       <div id = "tabs" style="margin: 15px 0;">
+        <ul>
+            <li><a href = "#tabs-1">Tab 1</a></li>
+            <li><a href = "#tabs-2">Tab 2</a></li>
+            <li><a href = "#tabs-3">Tab 3</a></li>
+         </ul>
+            
+         <div id = "tabs-1">
+            <p><strong>Hospital Building G</strong></p>
+            <img src="imgProjects/project1.jpg"  alt="projects">
+            <p> 5-floor, include attick, basement. Walls: ceramic break, thicness 0.8m, 0.5m.
+                Reconstruction 2016-2017
+                </p>
+         </div>
+            
+         <div id = "tabs-2">
+            <p><strong>Complex of Hospital Buildings</strong></p>
+            <img src="imgProjects/project1inf.jpg" alt="projects">
+            <p>	Reconstruction Complex of Buildings of the Garnison infirmary(military hospital in 20th century). Now - Hospital for Infectious Desease
+                Reconstruction 2016-2017</p>
+         </div>
+            
+         <div id = "tabs-3">
+            <p><strong>KDPROEKT</strong></p>
+            <img src="imgProjects/project2.jpg"  alt="projects">
+            <p> Build last century, 1968. Fasads Reconstruction glass stained glass. Project & construction worcs 2004, 2007, 2015. Not completed.</p>
+         </div>
+      </div>
+
+    </div>
+</div>
+</section>               
+ <div class="footerLogo"> footerLogo
+</div> 
+<footer class="footer2">
+<!-- 518 -->
+
+<article id = "social">
+  <a href = "https://www.facebook.com" target = "_blank"> <img src = "../images/iconmonstr-facebook-1.svg" alt = "facebook icon" class = "fbIcon"> </a>
+  <a href = "https://www.instagram.com" target = "_blank"><img src = "../images/iconmonstr-instagram-11.svg" alt = "instagram icon" class = "igIcon" /> </a>
+  <a href = "https://www.youtube.com" target = "_blank"><img src = "../images/iconmonstr-youtube-6.svg" alt = "youtube icon" class = "ytIcon" /> </a>
+  <a href = "https://www.twitter.com" target = "_blank"><img src = "../images/iconmonstr-twitter-1.svg" alt = "twitter icon" class = "twIcon" />    </a> </article>
+  <article id = "social">
+    <!-- 518 - for index page:
+      <a href = "https://www.facebook.com" target = "_blank"> <img src = "images/iconmonstr-facebook-1.svg" alt = "facebook icon" class = "fbIcon"> </a>
+    <a href = "https://www.instagram.com" target = "_blank"><img src = "images/iconmonstr-instagram-11.svg" alt = "instagram icon" class = "igIcon" /> </a>
+    <a href = "https://www.youtube.com" target = "_blank"><img src = "images/iconmonstr-youtube-6.svg" alt = "youtube icon" class = "ytIcon" /> </a>
+    <a href = "https://www.twitter.com" target = "_blank"><img src = "images/iconmonstr-twitter-1.svg" alt = "twitter icon" class = "twIcon" />    </a> </article> -->
+
+</footer>
+<footer class="footer3">footer3
+
+
+<p>&copy; 2020 - All Rights Reserved</p>             
+ </footer>
+</div><!--end container for grid-->
+</main>
+</body>
+</html>
