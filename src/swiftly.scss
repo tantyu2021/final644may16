@@ -1,0 +1,49 @@
+/***************************************************************************************************
+													TABLE OF CONTENTS
+***************************************************************************************************************
+1) Project details, 
+2) CSS Reset, color and color variables and typography details
+3) Global styles(tags, basic styling, buttons, images, foat and clear)
+4) Header and nav
+5) Main body content (grids, tables, forms, 
+6) Generic selectors (shared page class styles)
+
+7) Media queries
+
+**************************************************************************************/
+/************************************************************************************
+	1. 		 PROJECT DETAILS, COLOR
+
+	Author   :  Manisha Gupta, Andrew Burke, Tatiana Johnson
+  Project  :  Web Development Framework for home based food delivery business
+    Ver 		 :0.1
+**************************************************************************************/    
+
+@import "variables";
+
+/**************************************************************************
+	2. 		 CSS RESET, MIXINS, UTILITIES(IMAGES, FLOATS)
+***************************************************************************/
+@import "reset";
+@import "mixins";
+@import "utilities";
+
+/************************************************************************************
+	3. 		 GLOBAL STYLES (TYPOGRAPHY, GRIDS, TABLES,FORMS, BUTTONS,THEMES )
+*************************************************************************************/
+//importing all fonts provided by framework
+// @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Caveat+Brush&family=Cookie&family=Dancing+Script:wght@400;700&family=Lato:wght@300;400;700&family=Lobster&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500&family=Satisfy&display=swap');
+
+@import "globalStyles/typography";
+@import "globalStyles/grid";
+@import "globalStyles/tables";
+@import "globalStyles/forms";
+@import "globalStyles/buttons";
+@import "global-theme-red";
+@import "global-theme-bake";
+@import "global-theme-natural";
+@import "components/jumbotron";
+@import "components/tabbedPanel";
+@import "components/slideshow";
+@import "components/navigation";
+

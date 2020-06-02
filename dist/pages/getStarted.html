@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" >
+
+    <!-- links for all fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Caveat+Brush&family=Cookie&family=Dancing+Script:wght@400;700&family=Lato:wght@300;400;700&family=Lobster&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500&family=Satisfy&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="../css/swiftly.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/framework.min.css" type="text/css">    
+    <!--  link to jquery cdn-->
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+
+    <!-- link to framework jquery -->
+    <script src="../scripts/framework-jq.js"></script>
+    <title>Documentation - Swiftly framework for building responsive websites</title>
+</head>
+<body class="redtheme" >
+    <header >
+        <div class="wrapper">
+            <div class="row">
+                <div class=" col-pl-04 col-tb-02 col-tl-01 col-lg-01 cl-self-center"><img src="../images/logo3-50.jpg" alt="logo" class="cl-align-center">
+                </div>
+                <nav class="nav-01F col-pl-04 col-tb-08 col-tl-10 col-lg-10 cl-self-center" id="nav-F"> 
+                    <div>
+                    <input type="checkbox" id="toggle" />
+                    <label for="toggle">Menu</label> 
+                    <nav class="nav-01-nav cl-align-center">
+                        <ul >
+                            <li><a href="../../index.html">Home</a> </li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                            <li class="active" id="gslink"><a href="#">Get Started</a></li>
+                            <li><a href="examples.html">Examples</a></li>
+                            <!-- <li><a href="contact.html">Contact</a></li> -->
+                            </ul>
+                        <div class="clearIt"></div>
+                    </nav>
+                    </div>
+                </nav>
+                <div class="cl-inline-blk col-tb-02 col-pl-04 col-tl-01 col-lg-01 cl-self-center"><a href="#" class="cl-btn cl-btn-lg ">Download</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="gs-body">
+        <div class="cl-headers">
+            <hr class="hr" />
+            <h2>Get Started</h2>
+            <hr class="hr" />
+        </div>    
+        <h3 class=" cl-align-left cl-font-poppins">Introduction</h3>
+        <p>
+            Get started with Swiftly, the newest framework for building responsive, mobile-first sites. Accompanied by detailed documentation on usage and a template starter page.
+        </p>
+        <p>Follow the steps to get all pieces in place.</p>
+        
+        <h4>Step 1 - Installation</h4>
+        <p>
+            Download Swiftly from Github. <br /> Use Download button or go to Github and search for our repository.
+        </p>
+        <p>The download includes the following precompiled CSS, SASS files, Javascript files and Icons/images needed for the framework.</p> <br/>
+        <p class="cl-bold" >CSS: </p>
+        <ul class="ins-list">
+            <li>swiftly.css</li>
+            <li>swiftly.min.css</li>
+            <li>swiftly.css.map</li>
+            <li>swiftly.min.css.map</li>
+        </ul>
+        <p class="cl-bold">Javascript:</p>
+        <ul class="ins-list">
+            <li>swiftly-slideshow.js</li>
+            <li>swiftly-tabs.js</li>
+            <li>swiftly.js</li>        
+        </ul>
+
+        <h4>Step 2 - Set up</h4>
+        <ul class="ins-list">
+            <li>All required tags and attributes should be specified in the meta and head tags, for responsive beahvior.</li>
+            <li>All required links to CSS, Javascript should be specified. Links to Swiftly files should appear before your local files. This would allow your styles to take precedence, in case of overrriding or modifying framework styles.</li>
+            <li>It is preferred to connect to swiftly.min.css as it is minified and will add less weight to your pages.</li>
+            <li>Make sure the sorce path is correct, according to your folder setup.
+            </li>        
+        </ul>
+
+
+        <div class="wrapper-fluid" id="gs-links">    
+            <h5> Links </h5>
+
+            <div class=" row  ">                    
+            <!-- <div class=" row cl-code-bg ">                     -->
+                <code class="col-12  cl-self-center "> 
+                    <p class="cl-font-open-sans ins-ptitle">Link to font awesome CDN</p>
+                    <textarea name="" id=""  rows="2" class="cl-code code-txtarea">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" >
+                    </textarea>                 
+                </code>               
+            
+                <code class= "col-12  cl-self-center"> 
+                    <p class="cl-font-open-sans ins-ptitle">Link to google fonts placed in head section, even before swiftly.css files.</p>
+                    <textarea name="" id=""  rows="2" class="cl-code code-txtarea">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Caveat+Brush&family=Cookie&family=Dancing+Script:wght@400;700&family=Lato:wght@300;400;700&family=Lobster&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500&family=Satisfy&display=swap" rel="stylesheet"> 
+                    </textarea>                        
+                </code>        
+                
+                <code class= "col-12  cl-self-center"> 
+                    <p class="cl-font-open-sans ins-ptitle">CSS link to be placed in head before other stylesheets</p>
+                    <textarea name="" id=""  rows="2" class="cl-code code-txtarea">
+<link rel="stylesheet" href="../css/swiftly.min.css" type="text/css">
+                    </textarea>                        
+                </code>   
+
+                <code class= "col-12  cl-self-center"> 
+                <p class="cl-font-open-sans ins-ptitle">Javascript link to be placed at the bottom of body tag.</p>
+            <textarea name="" id=""  rows="4" class="cl-code code-txtarea">
+<body>
+    <p>body content</p>
+
+    <script src="../scripts/swiftly.js"></script>
+    <script src="../scripts/swiftly-tabs.js"></script>
+    <script src="../scripts/swiftly-slideshow.js"></script>
+</body>
+            </textarea>                       
+                </code>             
+            </div>   <!-- end div row -->
+        </div>  <!-- end gs-links -->
+
+        <h4>Step 3 - HTML starter template</h4>
+        <p>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:</p>
+
+        <code> 
+            <p class="cl-font-open-sans ins-ptitle">Javascript link to be placed at the bottom of body tag.</p>
+            <textarea name="" id=""  rows="20" class="cl-code code-txtarea">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- link for font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" >
+
+        <!-- links for all fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Caveat+Brush&family=Cookie&family=Dancing+Script:wght@400;700&family=Lato:wght@300;400;700&family=Lobster&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500&family=Satisfy&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="../css/swiftly.min.css" type="text/css">
+
+        <link rel="stylesheet" href="../css/yourlocal.min.css" type="text/css">    
+        <title>Page Title </title>
+    </head>
+        <body >
+            <h1>Body content</h1>
+
+            <script src="../scripts/swiftly.js"></script>
+            <script src="../scripts/swiftly-tabs.js"></script>
+            <script src="../scripts/swiftly-slideshow.js"></script>
+        </body>
+            </textarea>                        
+        </code>
+
+        <h4>Step 4 - Follow Documentation</h4>
+        <p>Documentation comes with examples on how to use the framework classes.</p>
+    </main>
+
+    <footer class="footer-area ">
+        <div>
+          <div>
+            <!-- <div class="site-logo cl-align-center py5" id="idFLogo"> -->
+            <div class="cl-align-center py5" id="idFLogo">
+              <a href="#gs-body"><img src="../images/logo-50-trans.png" alt="logo"></a>
+            </div>
+            <div class="social cl-align-center">
+              <p class="cl-txt-upper cl-font-open-sans cl-bold">Follow me</p>
+              <a href="#" id="idFB"><i class="fab fa-facebook"></i></a>
+              <a href="#" id="idLN"><i class="fab fa-linkedin"></i></a>
+              <a href="#" id="idGH"><i class="fab fa-github"></i></a>
+              <a href="#" id="idIN"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyrights text-center">
+              <p class="cl-align-center py5">
+                Copright &copy; SWIFTLY 2019 all rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

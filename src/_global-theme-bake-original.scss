@@ -1,0 +1,146 @@
+/**************************************************************************************
+                THEME ONE - named Aesthetic. All classes for this theme begin with letter a
+ **************************************************************************************/   
+/* 
+        
+// theme1 colors  
+/*base colors used are already a part of _variables
+$white:  #fff;
+$black:  #000;
+$white2: #f7f7f7;// rgb(247, 247, 247)* header,footer color
+
+$lgray:  #dfdfdf; //rgb(194, 194, 194)
+$gray:   #c2c2c2; //rgb(194, 194, 194)
+$mgray:  #656666; //rgb(101, 102, 102)
+$dgray:  #1e1f1f; // rgb(30, 31, 31)
+$blue2:  #1d305c; //rgb(29, 48, 92) *head foot bgcolor, page txt, 
+$code:   #e61212; //
+
+$link:      #0c47c7;
+$lvisited:  #43088f;
+$lactive:   #5c89eb;
+$lhover:    #5c89eb;
+$lfocus:    #5c89eb;
+*/
+$lightred: #f0ece5;
+$medred:  #bb9755;
+$darkred: #867230; ///rgb(139,0,0)
+$bgred: #745b09;//rgb(235, 231, 231);//
+
+// variables for font-family
+// $a-font-san-serif: Poppins,Lato,'Open Sans', sans-serif;
+// $a-font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// $a-fontwriting: cookie, satisfy, "dancing-script" ,cursive;
+// $a-font-disp: "balsamiq sans",lobster, serif;
+
+.baketheme{ 
+    background-color: $white2;
+    color: $blue2;
+    p, li{ 
+      font-family: Lato,'Open Sans', sans-serif;
+      color: $blue2;
+    }
+    h1,.h1 { font-family:  "balsamiq sans",lobster, serif; color: $darkred;}
+    h2,.h1{font-family: lobster, serif;  color: $darkred;}
+    h3,.h3{font-family: satisfy, "dancing-script" ,cursive;  color: $darkred;}
+    h4,.h4{font-family: satisfy, "dancing-script" ,cursive;  color: $darkred; }
+    h5,.h5{font-family: satisfy, "dancing-script" ,cursive;  color: $darkred; }
+    h6,.h6{font-family: satisfy, "dancing-script" ,cursive;  color: $darkred; }
+    hr, .hr{ color: $darkred;}
+    border-color: $lightred;
+    .cl-btn{    
+      background-color: $darkred;
+      color: #f2f2f2;
+      margin: .2em 0;
+      padding: .5em;
+      &:hover {
+        background-color: $white2;
+        color: $darkred;
+        border: solid 1px $darkred;
+      }
+      &:active{
+        background-color: $white2;
+        color: $darkred;
+        border: solid 1px $darkred;
+      }
+    }
+    .cl-bs-solid{border-color: $gray;}
+    .cl-bs-groove{ border-color: $gray;}
+    .cl-bs-ridge{ border-color:$gray;}
+    .cl-bs-dotted{ border-color: $gray;}
+    .cl-bs-outset{ border-color: $gray;}
+    .cl-bs-double{ border-color: $gray;}
+    .cl-ss-controller{
+      background-color: $darkred;
+      border-color: $darkred;
+    }
+    .cl-ss-ul > li >img{ outline-color: $darkred;}
+    .cl-table {
+      background-color: $tbl-background;
+      caption{ color: $darkred; }
+      thead {
+        border-color: $tbl-border;
+        background-color: $tbl-hdr-background;
+      }
+      tbody {
+          tr {
+              &:nth-child(odd){
+                background-color: transparentize($lightred, .7);
+                &:hover{ background-color: opacify($lightred, .3); }
+              }             
+              &:nth-child(even){
+                  background-color: transparentize($gray, .7);
+                      &:hover{
+                          background-color: opacify($gray, .3);
+                      }
+                  }  
+          }
+        }
+    }
+    header{
+      background-color: $bgred;
+      p,li{ color: $white2;}
+      // nav{
+      //   background-color: $bgred;
+      //   p,li{ color: $white2;}
+      // }
+    }
+    nav{
+      background-color: $bgred;
+      p,li{ color: $white2;}
+      a{
+        color: $white2;
+      }
+    }
+    footer{
+      background-color: $bgred;
+      color: $white2;
+      font-size: 85%;
+      p,li,a{
+          color: $white2;
+      }
+      a{
+          &:visited{color: $gray;}
+          &:hover{ color: opacify($white2, .3);}
+          &:active{ color: $gray;}
+      }
+      @include break($breakpoint-md){
+        font-size: 92%;
+      }
+    }
+
+}
+
+.cl-bake-even{background-color: transparentize($medred, .6);}
+.cl-bake-odd{background-color: transparentize($gray, .6);}
+
+.cl-bake-even-hover:hover{background-color: opacify($medred, .6);}
+.cl-bake-odd-hover:hover{background-color: opacify($gray, .6);}
+
+//general class to allow to use color as background
+.cl-bake-bgcolor{
+  background-color: $darkred;
+}
+.cl-bake-txtcolor{
+  color: $darkred;
+}

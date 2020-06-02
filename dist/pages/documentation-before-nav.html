@@ -1,0 +1,2084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- links for all fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Caveat+Brush&family=Cookie&family=Dancing+Script:wght@400;700&family=Lato:wght@300;400;700&family=Lobster&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500&family=Satisfy&display=swap" rel="stylesheet"> 
+
+    <!-- css file meant to be distributed with framework -->
+    <link rel="stylesheet" href="../css/swiftly.min.css">
+
+    <!-- link for styling meant for framework website itself -->
+    <link rel="stylesheet" href="../css/framework.min.css">
+
+    <!--  link to jquery cdn-->
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+
+    <!-- link to framework jquery -->
+    <script src="../scripts/framework-jq.js"></script>
+
+    <title>SwiftlyFramework for website development. Responsive, easy to use, uses HTMl, CSS, Javascript </title>
+</head>
+ <body class="redtheme" id="doc-body">
+    <header >
+        <div class="wrapper">
+            <div class="row">
+                <div class=" col-pl-04 col-tb-02 col-tl-01 col-lg-01 cl-self-center"><img src="../images/logo3-50.jpg" alt="logo" class="cl-align-center">
+                </div>
+                <nav class="nav-01F col-pl-04 col-tb-08 col-tl-10 col-lg-10 cl-self-center" id="nav-F"> 
+                    <div>
+                    <input type="checkbox" id="toggle" />
+                    <label for="toggle">Menu</label> 
+                    <nav class="nav-01-nav cl-align-center">
+                        <ul >
+                            <li ><a href="../../index.html">Home</a> </li>
+                            <li class="active" id="doclink"><a href="#">Documentation</a></li>
+                            <li ><a href="getStarted.html">Get Started</a></li>
+                            <li><a href="examples.html">About</a></li>
+                            <!-- <li ><a href="contact.html">Contact</a></li> -->
+                            </ul>
+                        <div class="clearIt"></div>
+                    </nav>
+                    </div>
+                </nav>
+                <div class="cl-inline-blk col-tb-02 col-pl-04 col-tl-01 col-lg-01 cl-self-center"><a href="#" class="cl-btn cl-btn-lg ">Download</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+     <div id="doc-wrapper"> 
+        <section id="colortheme">
+            <div class="cl-headers">
+                <hr class="hr" />
+                <h2>Color Themes</h2>
+                <hr class="hr" />
+            </div>
+
+            <div class="wrapper" id="color-themes">    
+                <h4>Pre built color themes  </h4>
+                <p class="cl-fons-open-sans">
+                    A color theme adds color styles instantaneously to your page. It  adds color to header, body, footer, buttons, borders, tables and tables. It also sets fonts and colors for headings. <br />
+                    <p>Additonal classes are available to just change an elements background color or text color as per the theme.</p>
+                    Easy to customize by modifying the corresponding SASS file and generating the CSS. A new theme can be generated similarly.<br />
+                     There are three styles available. <br />
+                    Apply the theme class to the body.<br />Use these classes.<br />
+                </p>
+                <ul class="ins-list">
+                    <li>Red color theme. Use class <code class="cl-code">.redtheme</code>  </li>
+                    <li>Bake colors theme. Use class <code class="cl-code">.baketheme</code>  </li>
+                    <li>Natural colors theme. Use class <code class="cl-code">.naturaltheme</code>  </li>
+                    <p class="cl-italic"> Additional classes</p>
+                    <li>Red theme background. Use class <code class="cl-code">.cl-red-bgred</code>  </li>
+                    <li>Red theme text. Use class <code class="cl-code">.cl-red-txtred</code>  </li>
+                    <li>Bake theme background. Use class <code class="cl-code">.cl-bake-bgcolor</code>  </li>
+                    <li>Bake theme text. Use class <code class="cl-code">.cl-bake-txtcolor</code>  </li>
+                    <li>Natural theme background. Use class <code class="cl-code">.cl-natural-bgcolor</code>  </li>
+                    <li>Natural theme text. Use class <code class="cl-code">.cl-natural-txtcolor</code>  </li>
+                </ul>   
+            </div>
+            <code class="cl-self-center"> 
+                <p class="cl-font-open-sans ins-ptitle-red">HTML with classes</p>
+                <textarea name="" id=""  rows="3" class="cl-code code-txtarea">
+<body class="redtheme" >
+<body class="baketheme" >
+<body class="naturaltheme" >
+                </textarea>                            
+            </code>  
+
+
+        </section>
+
+        <!-- ****************** begin section Typography ****************** -->
+        <section id="typography">
+            <div class="cl-headers">
+                <hr class="hr" />
+                <h2>Typography</h2>
+                <hr class="hr" />
+            </div>
+
+            <div id="text">
+                <h3>Text</h3>
+                <p>
+                    The framework provides <span class="cl-bold">responsive text size </span>  by default. It is applied to all paragraph text(<code class="cl-code">&ltp&gt</code>), list items <code class="cl-code">&ltli&gt</code>, link tags(<code class="cl-code">&lta&gt</code>) and heading tags <code class="cl-code">&lth1&gt</code> thru <code class="cl-code">&lth6&gt</code> as per the following numbers.
+                </p>
+                <div class="cl-code-bg cl-align-center">
+                    <img src="../images/text-sizing.JPG" alt=" font sizes"  class="cl-img-fluid cl-txt-center" />
+                </div>
+                <div class="wrapper" id="font-classes">    
+                    <h4>Fonts  </h4>
+                    <p>
+                        The framework provides some basic fonts most apt for the home based food businesses. <br />
+                        The classes come with a series of fonts or just a single font with a fallback.<br />
+                        Include the following link in your html file to have access to the fonts.
+                        </p>
+        
+                        <textarea name="" id=""  rows="5" class="cl-code code-txtarea">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Caveat+Brush&family=Cookie&family=Dancing+Script:wght@400;700&family=Lato:wght@300;400;700&family=Lobster&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500&family=Satisfy&display=swap" rel="stylesheet"> 
+                        </textarea>
+
+                    <p>Following font classes are available.</p>
+                    <ul class="ins-list">
+                        <li>Balsamiq. Use class <code class="cl-code">.cl-font-balsamiq</code>  </li>
+                        <li>Caveat. Use class <code class="cl-code">.cl-font-caveat</code>  </li>
+                        <li>Cookie. Use class <code class="cl-code">.cl-font-cookie</code>  </li>
+                        <li>Dancing Script. Use class <code class="cl-code">.cl-font-dancing-script</code>  </li>
+                        <li>Lato. Use class <code class="cl-code">.cl-font-lato</code>  </li>
+                        <li>Lobster. Use class <code class="cl-code">.cl-font-lobster</code>  </li>
+                        <li>Open Sans. Use class <code class="cl-code">.cl-font-open-sans</code>  </li>
+                        <li>Poppins. Use class <code class="cl-code">.cl-font-poppins</code>  </li>
+                        <li>Satisfy. Use class <code class="cl-code">.cl-font-satisfy</code>  </li>
+                        <li>Family of san-serif fonts. Use class <code class="cl-code">.cl-san-serif</code>  </li>
+                        <li>Family of monospace fonts. Use class <code class="cl-code">.cl-mono</code>  </li>
+                        <li>Family of handwriting fonts. Use class <code class="cl-code">.cl-writing</code>  </li>
+                        <li>Family of display fonts. Use class <code class="cl-code">.cl-disp</code>  </li>
+
+                    </ul>            
+                    <div class=" row  cl-code-bg">                    
+                        <code class="col  cl-self-center cl-bs-solid"> 
+                            <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                            <pre class="cl-code ">
+    &ltp class="cl-font-balsamiq"&gtBalsamiq&lt/p&gt
+    &ltp class="cl-font-caveat"&gtCaveat&lt/p&gt
+    &ltp class="cl-font-cookie"&gtCookie&lt/p&gt
+    &ltp class="cl-font-dancing-script"&gtDancing Script&lt/p&gt
+    &ltp class="cl-font-lato"&gtLato&lt/p&gt
+    &ltp class="cl-font-lobster"&gtLobster&lt/p&gt
+    &ltp class="cl-font-open-sans"&gtOpen Sans&lt/p&gt
+    &ltp class="cl-font-poppins"&gtPoppins&lt/p&gt
+    &ltp class="cl-font-satisfy"&gtSatisfy&lt/p&gt
+                            </pre>
+                        </code>               
+                    
+                        <div class="col  cl-code-result cl-bs-solid">
+                            <p class="cl-font-balsamiq">Balsamiq</p>
+                            <p class="cl-font-caveat">Caveat</p>
+                            <p class="cl-font-cookie">Cookie</p>
+                            <p class="cl-font-dancing-script">Dancing Script</p>
+                            <p class="cl-font-lato">Lato</p>
+                            <p class="cl-font-lobster">Lobster</p>
+                            <p class="cl-font-open-sans">Open Sans</p>
+                            <p class="cl-font-poppins">Poppins</p>
+                            <p class="cl-font-satisfy">Satisfy</p>
+
+
+                        </div>
+                    </div>   
+                </div> <!-- end font-classes -->    
+            </div> <!-- end id text -->
+
+            <div id="headings">
+                <h3>Headings</h3>
+                <p class="p5">
+                    The framework provides pre-styled responsive headings for h1 thru h6.  <br />
+                    The same styles are also provided as classes h1 through h6, to be used anywhere on the website.
+                </p>
+
+                <div class="wrapper ">
+                    <h4>Using element tag h1 through h6 </h4>
+                    
+                    <div class=" row head-ex cl-code-bg">                    
+                    <!-- <div class=" row cl-code-bg ">  -->
+                        <code class="col cl-align-center  cl-self-center cl-bs-solid"> 
+                            <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                            <pre class="cl-code">
+    &lth1&gt Heading1 &lt/h1&gt <br />
+    &lth2&gt Heading2 &lt/h2&gt <br />
+    &lth3&gt Heading3 &lt/h3&gt <br />
+    &lth4&gt Heading4 &lt/h4&gt <br />
+    &lth5&gt Heading5 &lt/h5&gt <br />
+    &lth6&gt Heading6 &lt/h6&gt <br />
+                            </pre>
+                        </code>    
+
+                    
+                        <div class="col cl-code-result cl-bs-solid head-ex">
+                            <h1>Heading 1</h1>
+                            <h2>Heading 2</h2>
+                            <h3>Heading 3</h3>
+                            <h4 class=" cl-align-center">Heading 4</h4>
+                            <h5>Heading 5</h5>
+                            <h6>Heading 6</h6>
+                        </div>
+                    </div>
+                </div>
+                    <br /> 
+                <div class="wrapper">    
+                    <h4>Heading style on p element using classes h1 through h6 </h4>
+                    <div class=" row cl-code-bg">                    
+                    <!-- <div class=" row cl-code-bg ">                     -->
+                        <code class="col  cl-align-center cl-self-center cl-bs-solid"> 
+                            <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                            <pre class="cl-code ">
+    &ltp class="h1"&gtHeading 1&lt/p&gt <br />
+    &ltp class="h2"&gtHeading 2&lt/p&gt <br />
+    &ltp class="h3"&gtHeading 3&lt/p&gt <br />
+    &ltp class="h4"&gtHeading 4&lt/p&gt <br />
+    &ltp class="h5"&gtHeading 5&lt/p&gt <br />
+    &ltp class="h6"&gtHeading 6&lt/p&gt <br />
+                            </pre>
+                        </code>               
+                    
+                        <div class="col  cl-code-result cl-bs-solid head-ex">
+                            <p class="h1">Heading 1</p>
+                            <p class="h2">Heading 2</p>
+                            <p class="h3">Heading 3</p>
+                            <p class="h4 cl-align-center">Heading 4</p>
+                            <p class="h5">Heading 5</p>
+                            <p class="h6">Heading 6</p>
+                        </div>
+                    </div>   
+                </div>              
+
+            </div> <!-- end headings -->
+
+            <div class="wrapper" id="inline-elements">    
+                <h4>Inline Text Elements  </h4>
+                <p>
+                    The framework provides some basic styling for inline elements. <br />
+                </p>
+    
+                <p>Following classes are available.</p>
+                <ul class="ins-list">
+                    <li>Bold. Use class <code class="cl-code">.cl-bold</code>  </li>
+                    <li>Italic. Use class <code class="cl-code">.cl-italic</code>  </li>
+                    <li>Cite. Use class <code class="cl-code">.cl-cite</code>  </li>
+                    <li>Code. Use class <code class="cl-code">.cl-code</code>  </li>
+                    <li>Var. Use class <code class="cl-code">.cl-var</code>  </li>
+                    <li>Abbr. Use class <code class="cl-code">.cl-abbr</code>  </li>
+                    <li>Address. Use class <code class="cl-code">.cl-address</code>  </li>
+                    <li>Blockquote. Use class <code class="cl-code">.cl-blockquote</code>  </li>
+
+                </ul>            
+                <div class=" row  cl-code-bg">                    
+                    <code class="col  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="12" class="cl-code code-txtarea">
+<p class="cl-bold">Bold text</p>
+<p class="cl-italic">Italic text</p>
+<code class="cl-code">background-color: red;</code>
+<p class="cl-var">Triangle area is: 1/2 x  <span class="cl-var">b</span> x <span class="cl-var">h</span></p>
+<p><abbr class="cl-abbr" title="Cascading Style Sheets">CSS</abbr> styles a HTML document.</p>
+<p class="cl-address">Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA</p>
+<p class="cl-cite">"http://www.worldwildlife.org/who/index.html"</p>                            
+<p class="cl-blockquote">Blockquote: For 50 years, WWF has been protecting the future of nature.</p>
+<hr class=".hr" />
+                        </textarea>                        
+                    </code>               
+                
+                    <div class="col  cl-code-result cl-bs-solid">
+                        <p class="cl-bold">Bold text</p>
+                        <p class="cl-italic">Italic text</p>
+                        <code class="cl-code">background-color: red;</code>
+                        <p class="cl-var">Triangle area is: 1/2 x  <span class="cl-var">b</span> x <span class="cl-var">h</span></p>
+                        <p><abbr class="cl-abbr" title="Cascading Style Sheets">CSS</abbr> styles a HTML document.</p>
+                        <p class="cl-address">Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+                            Visit us at:<br>
+                            Example.com<br>
+                            Box 564, Disneyland<br>
+                            USA</p>
+                        <p class="cl-cite">"http://www.worldwildlife.org/who/index.html"</p>                            
+                        <p class="cl-blockquote">Blockquote: For 50 years, WWF has been protecting the future of nature.</p>
+                        <hr class=".hr" />
+                    </div>
+                </div>   
+            </div> <!-- end inline element classes -->  
+
+            <div class="wrapper" id="xalign">    
+                <h4>Horizontal alignment  </h4>
+                <p>
+                    The framework provides classes for alignment on x axis. <br />
+                </p>
+    
+                <p>Following classes are available.</p>
+                <ul class="ins-list">
+                    <li>Left align. Use class <code class="cl-code">.cl-align-left</code>  </li>
+                    <li>Right align. Use class <code class="cl-code">.cl-align-right</code>  </li>
+                    <li>Center align. Use class <code class="cl-code">.cl-align-center</code>  </li>
+                </ul>            
+                <div class=" row  cl-code-bg">                    
+                    <code class="col  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="5" class="cl-code code-txtarea">
+<p class="cl-align-left">Aligned left using class cl-align-left </p>
+<p class="cl-align-right">Aligned rigth using class cl-align-right</p>
+<p class="cl-align-center">Aligned center using class cl-align-center</p>
+                        </textarea>                        
+                    </code>               
+                
+                    <div class="col  cl-code-result cl-bs-solid">
+                        <p class="cl-align-left">Aligned left using class cl-align-left </p>
+                        <p class="cl-align-right">Aligned rigth using class cl-align-right</p>
+                        <p class="cl-align-center">Aligned center using class cl-align-center</p>
+                    </div>
+                </div>   
+            </div> <!-- end horizontal alignments -->  
+
+            <div class="wrapper" id="yalign">    
+                <h4>Vertical alignment  </h4>
+                <p>
+                    The framework provides classes for alignment on y axis. <br />
+                </p>
+    
+                <p>Following classes are available.</p>
+                <ul class="ins-list">
+                    <li>Top align. Use class <code class="cl-code">.cl-valign-top</code>  </li>
+                    <li>Bottom align. Use class <code class="cl-code">.cl-valign-bottom</code>  </li>
+                    <li>Center align. Use class <code class="cl-code">.cl-valign-center</code>  </li>
+                </ul>            
+                <div class=" row  cl-code-bg">                    
+                    <code class="col  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="5" class="cl-code code-txtarea">
+<p class="cl-align-left">Aligned left using class cl-align-left </p>
+<p class="cl-align-right">Aligned right using class cl-align-right</p>
+<p class="cl-align-center">Aligned center using class cl-align-center</p>
+                        </textarea>                        
+                    </code>               
+                
+                    <div class="col  cl-code-result cl-bs-solid ">
+                        <div class="div-height"><p class="cl-valign-top">Aligned top using class cl-valign-top </p></div>
+                        <div class="div-height"><p class="cl-valign-bottom">Aligned bottom using class cl-valign-bottom</p></div>
+                        <div class="div-height"><p class="cl-valign-center">Aligned center using class cl-align-center</p></div>
+                        <!-- <p class="cl-valign-top">Aligned top using class cl-valign-top </p>
+                        <p class="cl-valign-bottom">Aligned bottom using class cl-valign-bottom</p>
+                        <p class="cl-valign-center">Aligned center using class cl-align-center</p> -->
+                    </div>
+ 
+                </div>   
+            </div> <!-- end vertical alignments -->  
+
+            <div class="wrapper" id="flex-align">    
+                <h4>Alignments for flex items.  </h4>
+                <p>
+                    The framework provides classes for alignment of flex content on x-axis, y-axis and horizontal alignment on the same row. <br />
+                </p>
+    
+                <p>Classes to justify flex content</p>
+                <ul class="ins-list">
+                    <li>Flex start. Use class <code class="cl-code">.cl-flex-h-start</code>  </li>
+                    <li>Flex end. Use class <code class="cl-code">.cl-flex-h-end</code>  </li>
+                    <li>Flex center. Use class <code class="cl-code">.cl-flex-h-center</code>  </li>
+                    <li>Space around. Use class <code class="cl-code">.cl-flex-h-sp-around</code>  </li>
+                    <li>Space between. Use class <code class="cl-code">.cl-flex-h-sp-between</code>  </li>
+                </ul>        
+                <p>Classes to align flex content</p>
+                <ul class="ins-list">
+                    <li>Flex start. Use class <code class="cl-code">.cl-flex-v-start</code>  </li>
+                    <li>Flex end. Use class <code class="cl-code">.cl-flex-v-end</code>  </li>
+                    <li>Flex center. Use class <code class="cl-code">.cl-flex-v-center</code>  </li>
+                    <li>Space around. Use class <code class="cl-code">.cl-flex-v-sp-around</code>  </li>
+                    <li>Space between. Use class <code class="cl-code">.cl-flex-v-sp-between</code>  </li>
+                </ul> 
+                <p>Classes to align flex items</p>
+                <ul class="ins-list">
+                    <li>Flex start. Use class <code class="cl-code">.cl-flex-i-start</code>  </li>
+                    <li>Flex end. Use class <code class="cl-code">.cl-flex-i-end</code>  </li>
+                    <li>Center. Use class <code class="cl-code">.cl-flex-i-center</code>  </li>
+                    <li>Stretch. Use class <code class="cl-code">.cl-flex-i-stretch</code>  </li>
+                    <li>Baseline. Use class <code class="cl-code">.cl-flex-i-baseline</code>  </li>
+                </ul>      
+                <p>Classes for self aligning flex items</p>
+                <ul class="ins-list">
+                    <li>Vertical center. Use class <code class="cl-code">.cl-self-vcenter</code>  </li>
+                    <li>Horizontal center. Use class <code class="cl-code">.cl-self-hcenter</code>  </li>
+                    <li>Center. Use class <code class="cl-code">.cl-self-center</code>  </li>
+                </ul>                                
+
+            </div> <!-- end flex alignments -->  
+
+            <div class="wrapper" id="text-transform">    
+                <h4>Text transformation  </h4>
+                <p>
+                    The framework provides classes for text transformations. <br />
+                </p>
+    
+                <p>Following classes are available.</p>
+                <ul class="ins-list">
+                    <li>Upper case. Use class <code class="cl-code">.cl-txt-upper</code>  </li>
+                    <li>Lower case. Use class <code class="cl-code">.cl-txt-lower</code>  </li>
+                    <li>Capital case. Use class <code class="cl-code">.cl-txt-capital</code>  </li>
+                    <li>Text shadow1. Use class <code class="cl-code">.cl-txt-shadow1</code>  </li>
+                    <li>Text shadow2. Use class <code class="cl-code">.cl-txt-shadow2</code>  </li>
+                </ul>            
+                <div class=" row  cl-code-bg">                    
+                    <code class="col  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="5" class="cl-code code-txtarea">
+<p class="cl-txt-upper">Text is in uppercase</p>
+<p class="cl-txt-lower">Text is in lowercase</p>
+<p class="cl-txt-capital">Text is capitalized.</p>
+<p class="cl-txt-shadow1">Text with shadow. </p>
+<p class="cl-txt-shadow2">Text with 2 shadows in 2 colors. </p>  
+                        </textarea>                        
+                    </code>               
+                
+                    <div class="col  cl-code-result cl-bs-solid ">
+                        <p class="cl-txt-upper">Text is in uppercase</p>
+                        <p class="cl-txt-lower">Text is in lowercase</p>
+                        <p class="cl-txt-capital">Text is capitalized.</p>
+                        <p class="cl-txt-shadow1">Text with shadow. </p>
+                        <p class="cl-txt-shadow2">Text with 2 shadows in 2 colors. </p>                        
+                    </div>
+ 
+                </div>   
+            </div> <!-- end text transformations -->  
+
+            <div class="wrapper" id="border-styles">    
+                <h4>Border styles  </h4>
+                <p> 
+                    The framework provides classes for applying borders. <br />
+                </p>
+    
+                <p>Following classes are available.</p>
+                <ul class="ins-list">
+                    <li>Solid border. Use class <code class="cl-code">.cl-bs-solid</code>  </li>
+                    <li>Groove border. Use class <code class="cl-code">.cl-bs-groove</code>  </li>
+                    <li>Dotted border. Use class <code class="cl-code">.cl-bs-dotted</code>  </li>
+                    <li>Outset border. Use class <code class="cl-code">.cl-bs-outset</code>  </li>
+                    <li>Dashed border. Use class <code class="cl-code">.cl-bs-dashed</code>  </li>
+
+                </ul>            
+                <div class=" row  cl-code-bg">                    
+                    <code class="col  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="7" class="cl-code code-txtarea">
+<p class="cl-bs-solid">Solid Border </p> 
+<p class=" cl-bs-groove">Groove border</p>
+<p class=" cl-bs-dotted">Dotted border</p>
+<p class=" cl-bs-outset">Outset border</p>
+<p class="cl-bs-dashed">Dashed Border </p>  
+                        </textarea>                        
+                    </code>               
+                
+                    <div class="col  cl-code-result cl-bs-solid ">
+                        <p class="cl-bs-solid">Solid Border </p> <br />
+                        <p class=" cl-bs-groove">Groove border</p><br />
+                        <p class=" cl-bs-dotted">Dotted border</p><br />
+                        <p class=" cl-bs-outset">Outset border</p><br />
+                        <p class="cl-bs-dashed">Dashed Border </p>                      
+                    </div>
+ 
+                </div>   
+            </div> <!-- end border styles -->  
+
+        </section> 
+        <!-- ******************* end section Typography ****************** -->
+
+        <!-- ******************** start section buttons ****************** -->
+        <section id="buttons">
+            <div class="cl-headers">
+                <hr class="hr" />
+                <h2>Buttons</h2>
+                <hr class="hr" />
+            </div>      
+            <div id="btn-def" class="wrapper">
+                <div>
+                    <h4>Default buttons</h4> <br />
+                    <p>
+                    <!-- <p class="ins-ptitle"> -->
+                        <span class="cl-bold">Default buttons come with a basic styling. </span><br /> They have a background color, border and hover styles applied to them.<br />
+                        Disabled buttons do not have a pointer.
+                    </p>
+                </div>
+                <div class="row cl-code-bg cl-flex-h-center">
+                    <!-- <div class="col"> -->
+                        <code class=" col  cl-self-center cl-bs-solid">
+                           <p class="cl-font-open-sans ins-ptitle">HTML</p>
+                            <pre class="cl-code">
+    &ltbutton&gtDefault&lt/button&gtclass="cl-blk"<br />
+    &ltbutton class="cl-blk cl-btn-disabled"&gtDisabled&lt/button&gt<br />
+    &ltinput type="button" value="input type button"class="cl-blk"&gt<br />
+    &ltinput type="submit" value="input type Submit"class="cl-blk"&gt<br />
+    &ltinput type="reset" value="input type reset"class="cl-blk"&gt<br />
+                            </pre>
+                        </code>
+                    <!-- </div> -->
+                    <div class="col cl-code-result cl-bs-solid cl-self-center">
+                        <button class="cl-blk">Default</button><br />
+                        <button class="cl-blk cl-btn-disabled">Disabled</button><br />
+                        <input type="button" value="input type button" class="cl-blk"><br />
+                        <input type="submit" value="input type Submit" class="cl-blk"><br />
+                        <input type="reset" value="input type reset" class="cl-blk">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="wrapper" id="btn-size">    
+                <h4>Button Sizes </h4>
+                <p>Buttons have 5 sizes available.</p>
+                <ul class="ins-list">
+                    <li> Extra small button. Use class <code class="cl-code">.cl-btn-xsm</code>  </li>
+                    <li>Small button. Use class <code class="cl-code">.cl-btn-sm</code>  </li>
+                    <li>Regular button. No class required. It's default size.  </li>
+                    <li>Large button. Use class <code class="cl-code">.cl-btn-lg</code></li>
+                    <li>Extra large button.Use class <code class="cl-code">.cl-btn-xlg</code></li>
+                </ul>            
+                <div class=" row  cl-code-bg">                    
+                    <code class="col  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <pre class="cl-code ">
+    &ltbutton class="cl-btn-xsm"&gtxsm button&lt/button&gt <br />
+    &ltbutton class="cl-btn-sm"&gtsm button&lt/button&gt<br />
+    &ltbutton&gtreg button&lt/button&gt<br />
+    &ltbutton class="cl-btn-lg"&gtlarge button&lt/button&gt<br />
+    &ltbutton class="cl-btn-xlg"&gtxl button&lt/button&gt<br />
+                        </pre>
+                    </code>               
+                
+                    <div class="col  cl-code-result cl-bs-solid">
+                        <button class="cl-btn-xsm cl-blk">xsm button</button>
+                        <button class="cl-btn-sm cl-blk">sm button</button>
+                        <button class="cl-blk">reg button</button>
+                        <button class="cl-btn-lg cl-blk">large button</button>
+                        <button class="cl-btn-xlg cl-blk">xl button</button>
+                    </div>
+                </div>   
+            </div>  
+    
+            <div class="wrapper" id="btn-styles">    
+                <h4>Button Styles </h4>
+                <p>Buttons have 5 styles available.</p>
+                <ul class="ins-list">
+                    <li> Sharp button. Use class <code class="cl-code">.cl-btn-sharp</code>  </li>
+                    <li>Soft button. Use class <code class="cl-code">.cl-btn-soft</code>  </li>
+                    <li>Oval button. Use class <code class="cl-code">.cl-btn-oval</code>  </li>
+                    <li>Round button. Use class <code class="cl-code">.cl-btn-round</code></li>
+                    <li>3D button.Use class <code class="cl-code">.cl-btn-shadow</code></li>
+                </ul>            
+                <div class=" row cl-code-bg ">                    
+                    <code class="col  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <pre class="cl-code ">
+    &ltbutton class="cl-btn-sharp cl-blk"&gtsharp&lt/button&gt<br />
+    &ltbutton class="cl-btn-soft cl-blk"&gtsoft&lt/button&gt<br />
+    &ltbutton class="cl-btn-oval cl-blk"&gtoval&lt/button&gt<br />
+    &ltbutton class="cl-btn-round cl-blk"&gtround&lt/button&gt<br />
+    &ltbutton class="cl-btn-shadow cl-blk"&gt3d&lt/button&gt<br />
+                        </pre>
+                    </code>               
+                
+                    <div class="col  cl-code-result cl-bs-solid cl-align-center">
+                        <button class="cl-btn-sharp cl-blk">sharp</button><br />
+                        <button class="cl-btn-soft cl-blk">soft</button><br />
+                        <button class="cl-btn-oval cl-blk">oval</button><br />
+                        <button class="cl-btn-round cl-blk">round</button><br />
+                        <button class="cl-btn-shadow cl-blk">3d</button>
+                    </div>
+                </div>   
+            </div>  
+    
+        </section>
+        <!-- ******************** end section buttons ******************** -->
+
+        <!-- ***************** start section utilities ****************** -->
+        <section id="utilities">
+            <div class="cl-headers">
+                <hr class="hr" />
+                <h2>Utility Classes</h2>
+                <hr class="hr" />
+            </div>
+            <p>The framework provides some basic utility classes for building the pages.
+            </p>
+            <div class="wrapper" id=media-print">    
+                <h4>Print control  </h4>
+                <p>
+                    Prevent certain content on a page from printing. Use class<code class="cl-code">.cl-no-print</code><br />
+                </p>
+  
+            </div>
+            <div class="wrapper" id="floats">    
+                <h4>Floating Content  </h4>
+                <p>
+                    Occasionally there is a need to float content and clear those floats. Use these classes.<br />
+                </p>
+    
+                <!-- <p>Classes to justify flex content</p> -->
+                <ul class="ins-list">
+                    <li>Float left. Use class <code class="cl-code">.cl-float-left</code>  </li>
+                    <li>Float right. Use class <code class="cl-code">.cl-float-right</code>  </li>
+                    <li>Clear float. Use class <code class="cl-code">.cl-clear-float</code>  </li>
+                </ul>   
+            </div>
+            <div class="wrapper" id="loc-maps">    
+                <h4>Google Maps  </h4>
+                <p>
+                    Occasionally there is a need to embed location on a map using Google maps. Use this class on your container element to make it responsive.<code class="cl-code">.cl-map-wrapper</code>. <br />
+                    Pay attention to remove <code class="cl-code">frameborder="0" style="border:0;"</code>from the embed code you get from google maps for the iframe.
+                </p>
+                <br /> <br />
+                <p class="cl-bold cl-italic">Small map for SDCE North Campus Location</p>
+                <div class="cl-map-wrapper  row cl-flex-h-center">                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.373289821314!2d-117.14906744923606!3d32.80887288957413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbffdc4c211c7f%3A0x97369b0b69436caf!2sSan%20Diego%20Continuing%20Education%20North%20City%20Campus!5e0!3m2!1sen!2sus!4v1590859874876!5m2!1sen!2sus" width="400" height="300" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                
+            </div>         
+            
+            <div class="wrapper" id="images">
+                <h4>Images  </h4>
+                <p> Images are a integral part of any website. Following classes are availlable for styling images. You may use padding and margin classes for space management </p>
+                <ul class="ins-list">
+                    <li>Responsive Image. Use class <code class="cl-code">.cl-img-fluid</code>  </li>
+
+                    <li>Soft edges. Use class <code class="cl-code">.cl-img-soft</code>  </li>
+                    <li>Round images. Use class <code class="cl-code">.cl-img-circle</code>  </li>
+                    <li>Outline images. Use class <code class="cl-code">.cl-img-outline</code>  </li>
+                    <li>Thumbnail images. Use class <code class="cl-code">.cl-img-thumbnail</code>. It sets image width and height to 60px each. Should not be used together with  <code class="cl-code">.cl-img-fluid</code></li>
+
+                </ul> 
+                <div class="wrapper-fluid">
+                    <div class="row">
+                        <div class="col cl-code-bg">
+                            <img src="../images/www-img.jpg" alt="www image" class="cl-img-fluid" />
+                            <img src="../images/www-img.jpg"  alt="www image" class="cl-img-fluid cl-img-soft" />
+                            <img src="../images/www-img.jpg" alt="www image" class="cl-img-fluid cl-img-circle" />
+                            <img src="../images/www-img.jpg" alt="www image" class="cl-img-fluid cl-img-outline" />
+                            <img src="../images/www-img.jpg" alt="www image" class=" cl-img-thumbnail" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper" id="block-display">    
+                <h4>Basic Content display</h4>
+                <p>
+                    To quickly change the block display properties of an element use these classes.<br />
+                    These are handy when using lists for making menus or navigation
+                </p>
+
+                <ul class="ins-list">
+                    <li>Inline. Use class <code class="cl-code">.cl-inline</code>  </li>
+                    <li>Inline block. Use class <code class="cl-code">.cl-inline-blk</code>  </li>
+                    <li>Block. Use class <code class="cl-code">.cl-blk</code>  </li>
+                    <p>Use these classes to manipulate the list item in an ordered or unordered list  </p>
+                    <li>Display all list items as inline block. Use class <code class="cl-code">.cl-inline-blk-list</code> on a <code class="cl-code">ul</code> or <code class="cl-code">ol</code></li>
+                    <li>Display list markers inside. Use class <code class="cl-code">.cl-lsp-in</code>  </li>
+                    <li>Display list markers outside. Use class <code class="cl-code">.cl-lsp-out</code>  </li>
+
+                </ul>   
+            </div>            
+            <div class="wrapper" id="spacing">    
+                <h4>Spacing content  </h4>
+                <p>
+                    Basic classes are availble for space management with paddding and margin around elements.<br />
+                    All spacing is applied inclass <code class="cl-code">ems</code>.
+                </p> <br />
+                <p class="cl-bold">Margin Classes</p>
+                <ul class="ins-list">                    
+                    <li>Margin of .5em on all sides. Use class <code class="cl-code">.m5</code>  </li>
+                    <li>Margin of 1em on all sides. Use class <code class="cl-code">.m10</code>  </li>
+                    <li>Margin of .5em on left and right. Use class <code class="cl-code">.mx5</code>  </li>
+                    <li>Margin of 1em on left and right. Use class <code class="cl-code">.mx10</code>  </li>
+                    <li>Margin of .5em on top and bottom. Use class <code class="cl-code">.my5</code>  </li>
+                    <li>Margin of 1em on top and bottom. Use class <code class="cl-code">.my10</code>  </li>
+                </ul>   <br />
+                <p class="cl-bold" >Padding Classes</p>
+                <ul class="ins-list">                    
+                    <li>Padding of .5em on all sides. Use class <code class="cl-code">.p5</code>  </li>
+                    <li>Padding of 1em on all sides. Use class <code class="cl-code">.p10</code>  </li>
+                    <li>Padding of .5em on left and right. Use class <code class="cl-code">.px5</code>  </li>
+                    <li>Padding of 1em on left and right. Use class <code class="cl-code">.px10</code>  </li>
+                    <li>Padding of .5em on top and bottom. Use class <code class="cl-code">.py5</code>  </li>
+                    <li>Padding of 1em on top and bottom. Use class <code class="cl-code">.py10</code>  </li>
+                </ul>   
+            </div>        
+        </section>
+        <!-- ***************** end section utilities ******************** -->
+        
+        <section id="tables">
+            <div class="cl-headers">
+                <hr class="hr" />
+                <h2>Tables</h2>
+                <hr class="hr" />
+            </div>
+            <div class="wrapper" id="tabletypes">
+                <div>
+                    <p class="cl-bold">We provide a variety of options to style your tables.</p>
+                    <ul class="ins-list">
+                        <li> Default basic styling for every table includes table border and header border. Use class <code class="cl-code">.cl-table-basic</code>  </li>     
+                        <li> Fully styled table is available with borders, zebra stripes and hover. Use class <code class="cl-code">.cl-table</code>  </li>  
+                        <li> Zebra striping can be achieved by applying classes on alternate, even or odd rows. You may stripe even, odd, or both rows. Class can be overrriden to change the color of the stripe. Use classes <code class="cl-code">.cl-even</code> and  <code class="cl-code">.cl-odd</code></li> 
+                        <li> Hover option classes for striped rows are applied similar to zebra striping. Colors can be changed. Classes are <code class="cl-code">.cl-even-hover</code> and  <code class="cl-code">.cl-odd-hover</code></li>      
+                        <li> Highlighter classes are available to highlight a particular row <code class="cl-code">.cl-hightlight-green</code> , <code class="cl-code">.cl-highlight-yellow</code> and <code class="cl-code">.cl-highlight-alert</code></li>  
+                    </ul>
+                </div>
+                <code>
+                    <pre class="cl-code">
+    &lttable class="cl-table-basic"&gt
+        &ltcaption&gt Basic table&lt/caption&gt
+        &ltthead&gt
+        &lttr&gt
+            &ltth&gtName&lt/th&gt
+            &ltth&gtCategory&lt/th&gt
+            &ltth&gtPlan&lt/th&gt
+        &lt/tr&gt
+        &lt/thead&gt
+        &lttbody&gt
+        &lttr class="cl-highlight-green"&gt
+            &lttd&gtAnthony Zeid&lt/td&gt
+            &lttd&gt3&lt/td&gt
+            &lttd&gtWeekly&lt/td&gt
+        &lt/tr&gt
+        &lttr class="cl-even cl-even-hover"&gt
+            &lttd&gtRoman&lt/td&gt
+            &lttd&gt2&lt/td&gt
+            &lttd&gtDaily&lt/td&gt
+        &lt/tr&gt
+        &lttr class="cl-highlight-yellow"&gt
+            &lttd&gtRina Joy&lt/td&gt
+            &lttd&gt1&lt/td&gt
+            &lttd&gtmonthly&lt/td&gt
+        &lt/tr&gt      
+        &lttr class="cl-highlight-alert"&gt
+            &lttd&gtTina Turner&lt/td&gt
+            &lttd&gt1&lt/td&gt
+            &lttd&gtAnnual&lt/td&gt
+        &lt/tr&gt                              
+    &lt/table&gt  
+                    </pre>
+                </code>    
+                <div class="row cl-code-bg">
+                    <div class="col cl-self-center cl-code-result">
+                        <table class="cl-table-basic">
+                            <caption> Basic table</caption>
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Plan</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Anthony Zeid</td>
+                                <td>3</td>
+                                <td>Weekly</td>
+                            </tr>
+                            <tr>
+                                <td>Roman</td>
+                                <td>2</td>
+                                <td>Daily</td>
+                            </tr>
+                            <tr>
+                                <td>Rina Joy</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                            </tr>    
+                            <tr>
+                                <td>Tina Turner</td>
+                                <td>1</td>
+                                <td>Annual</td>
+                            </tr>                
+                        </table>                     
+                    </div>
+                    <div class="col cl-self-center cl-code-result">
+                        <table class="cl-table-basic">
+                            <caption> Zebra Striped even rows</caption>
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Plan</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Anthony Zeid</td>
+                                <td>3</td>
+                                <td>Weekly</td>
+                            </tr>
+                            <tr class="cl-even cl-even-hover">
+                                <td>Roman</td>
+                                <td>2</td>
+                                <td>Daily</td>
+                            </tr>
+                            <tr>
+                                <td>Rina Joy</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                            </tr>      
+                            <tr class="cl-even cl-even-hover">
+                                <td>Tina Turner</td>
+                                <td>1</td>
+                                <td>Annual</td>
+                            </tr>                             
+                        </table>                     
+                    </div>   
+                    <div  class="col cl-self-center cl-code-result">
+                        <table class="cl-table-basic">
+                            <caption> Highlighted rows</caption>
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Plan</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="cl-highlight-green">
+                                <td>Anthony Zeid</td>
+                                <td>3</td>
+                                <td>Weekly</td>
+                            </tr>
+                            <tr>
+                                <td>Roman</td>
+                                <td>2</td>
+                                <td>Daily</td>
+                            </tr>
+                            <tr class="cl-highlight-yellow">
+                                <td>Rina Joy</td>
+                                <td>1</td>
+                                <td>monthly</td>
+                            </tr>   
+                            <tr class="cl-highlight-alert">
+                                <td>Tina Turner</td>
+                                <td>1</td>
+                                <td>Annual</td>
+                            </tr>                                
+                        </table>                     
+                    </div>             
+                </div>
+            </div>
+
+            <div class="wrapper" id="table-resp">
+                <h4 class="cl-headers">Responsive Tables</h4>
+                <!-- <hr class="hr" /> -->
+                <p class="cl-bold"> We provide three breakpoints for responsive tables.</p>
+                <ul class="ins-list">
+                    <li> A small table of 3X3 is responsive till the small breakpoint at 640px. Use class <code class="cl-code">.cl-res-table-sm</code>  </li>
+                    <li>A medium size table of 5x3 is responsive till the medium breakpoint at 768px. Use class <code class="cl-code">.cl-res-table-md</code>  </li>
+                    <li>A larger table, larger than medium,  is responsive till the last breakpoint at 960px. Use class <code class="cl-code">.cl-res-table-lg</code>  </li>
+                    <li>Pre-styled table. To use the styling applied to the folowing tables use class <code class="cl-code">.cl-table</li>
+                </ul>
+                <p class="note">
+                    In order to have the column heading display on the responsive table they need to be set on the td. <br />
+                    For example for the small table you will have to specify the following in the media query. <br />There are three column headings so we go upto nth-of-type(3).
+                </p>
+                
+                <code>
+                    <pre class="cl-code">
+        @media screen and(max-width: 640px){
+        .cl-res-table-sm td:nth-of-type(1):before {
+            content: "Heading Col1";
+            }
+            .cl-res-table-sm td:nth-of-type(2):before {
+            content: "Heading Col2";
+            }
+            .cl-res-table-sm td:nth-of-type(3):before {
+            content: "Heading Col3";
+            }           
+        }
+        }
+                    </pre>
+                </code>
+            
+                <section id="id-responsive-table-sm">       
+                    <table class="cl-table cl-res-table-sm">
+                        <caption class="h4">Responsive Small Table</caption>
+                        <thead>
+                        <tr>
+                            <th>Heading Col 1</th>
+                            <th>Heading Col 2</th>
+                            <th>Heading Col 3</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Data Col 1a</td>
+                            <td>Data Col 2a</td>
+                            <td>Data Col 3a</td>
+                        </tr>
+                        <tr>
+                            <td>Data Col 1b</td>
+                            <td>Data Col 2b</td>
+                            <td>Data Col 3b</td>
+                        </tr>
+                        <tr>
+                            <td>Data Col 1c</td>
+                            <td>Data Col 2c</td>
+                            <td>Data Col 3c</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+            
+                <section id="id-responsive-table-md">
+                <table class="cl-table cl-res-table-md">
+                    <caption class="h4 cl-txt-capital">Responsive Medium Table</caption>
+                    <thead>
+                    <tr>
+                        <th>Heading Col 1</th>
+                        <th>Heading Col 2</th>
+                        <th>Heading Col 3</th>
+                        <th>Heading Col 4</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Data Col 1a</td>
+                        <td>Data Col 2a</td>
+                        <td>Data Col 3a</td>          
+                        <td>Data Col 4a</td>
+                    </tr>
+                    <tr>
+                        <td>Data Col 1b</td>
+                        <td>Data Col 2b</td>
+                        <td>Data Col 3b</td>
+                        <td>Data Col 4b</td>
+                    </tr>
+                    <tr>
+                        <td>Data Col 1c</td>
+                        <td>Data Col 2c</td>
+                        <td>Data Col 3c</td>
+                        <td>Data Col 4c</td>
+                    </tr>
+                    <tr>
+                        <td>Data Col 1f</td>
+                        <td>Data Col 2f</td>
+                        <td>Data Col 3f</td>
+                        <td>This cell contains longer data</td>
+                    </tr>
+                    </tbody>
+                </table>   
+                </section>
+
+                <section id="id-responsive-table-lg">
+                    <table class="cl-table cl-res-table-lg">
+                        <caption class="h4 cl-txt-capital">Responsive Large table</caption>
+                        <thead>
+                        <tr>
+                            <th>Heading Col 1</th>
+                            <th>Heading Col 2</th>
+                            <th>Heading Col 3</th>
+                            <th>Heading Col 4</th>
+                            <th>Heading Col 5</th>
+                            <th>Heading Col 6</th>
+                            <th>Heading Col 7</th>
+                            <th>Heading Col 8</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Data Col 1a</td>
+                            <td>Data Col 2a</td>
+                            <td>Data Col 3a</td>          
+                            <td>Data Col 4a</td>
+                            <td>Data Col 5a</td>
+                            <td>Data Col 6a</td>
+                            <td>Data Col 7a</td>          
+                            <td>Data Col 8a</td>
+
+                        </tr>
+                        <tr>
+                            <td>Data Col 1b</td>
+                            <td>Data Col 2b</td>
+                            <td>Data Col 3b</td>
+                            <td>Data Col 4b</td>
+                            <td>Data Col 5b</td>
+                            <td>Data Col 6b</td>
+                            <td>Data Col 7b</td>          
+                            <td>Data Col 8b</td>
+                        </tr>
+                        <tr>
+                            <td>Data Col 1c</td>
+                            <td>Data Col 2c</td>
+                            <td>Data Col 3c</td>
+                            <td>Data Col 4c</td>
+                            <td>Data Col 5c</td>
+                            <td>Data Col 6c</td>
+                            <td>Data Col 7c</td>          
+                            <td>Data Col 8c</td>
+                        </tr>
+                        </tbody>
+                    </table> 
+                </section> 
+            </div>
+        </section> <!-- end section tables -->
+
+
+        <section class="wrapper" id="forms">    
+            <div class="cl-headers">
+                <hr class="hr" />
+                <h2>Forms</h2>
+                <hr class="hr" />
+            </div>
+            <p> 
+                The framework provides default styling for form elemnts. You may override as per your need. <br />
+            </p>
+            <p>Following defaults have been changed.</p>
+            <ul class="ins-list">
+                <li>Inputs have borders, box shadows, responsive height. Default width is set to 50%. </li>
+                <li>Check boxes and radio buttons have stylling applied to. </li>
+            </ul>            
+            <div class=" row  cl-code-bg">                    
+                <code class="col-12  cl-self-center cl-bs-solid"> 
+                    <p class="cl-font-open-sans ins-ptitle">HTML</p>
+                    <pre class="cl-code ">
+&ltform action="#" class="cl-align-left"&gt
+    &ltfieldset class=" px5"&gt
+        &ltlegend&gt Basic form elements&lt/legend&gt
+
+        &ltlabel for="fname"&gtFirst Name:&lt/label&gt
+        &ltinput type="text" name="fname" id='fname'&gt&ltbr /&gt
+        &ltlabel for="lname"&gtLast Name:&lt/label&gt
+        &ltinput type="text" name="lname" id='lname'&gt&ltbr /&gt
+        
+        &ltlabel for="browser"&gtBrowser:&lt/label&gt
+        &ltinput list="browsers" name="browser" id-="browser"&gt
+        &ltdatalist id="browsers"&gt
+            &ltoption value="Internet Explorer"&gt
+            &ltoption value="Firefox"&gt
+            &ltoption value="Chrome"&gt
+            &ltoption value="Opera"&gt
+            &ltoption value="Safari"&gt
+        &lt/datalist&gt&ltbr /&gt
+        
+        &ltlabel for="date"&gtDate:&lt/label&gt
+        &ltinput type="date" id="date" name="date"&gt &ltbr /&gt
+
+        &ltlabel for="month"&gtMonth:&lt/label&gt
+        &ltselect id="month"&gt            
+            &ltoption value="1"&gtJanuary&lt/option&gt
+            &ltoption value="2"&gtFebruary&lt/option&gt
+            &ltoption value="3"&gtMarch&lt/option&gt
+            &ltoption value="4"&gtApril&lt/option&gt
+            &ltoption value="5"&gtMay&lt/option&gt
+            &ltoption value="6"&gtJune&lt/option&gt
+            &ltoption value="7"&gtJuly&lt/option&gt
+            &ltoption value="8"&gtAugust&lt/option&gt
+            &ltoption value="9"&gtSeptember&lt/option&gt
+            &ltoption value="10"&gtOctober&lt/option&gt
+            &ltoption value="11"&gtNovember&lt/option&gt
+            &ltoption value="12"&gtDecember&lt/option&gt
+        &lt/select&gt&ltbr /&gt
+    
+        &ltlabel for="comments"&gtComments&lt/label&gt
+        &lttextarea name="comments" id="comments" cols="10" rows="6" placeholder="Enter in 100 words"&gt&lt/textarea&gt&ltbr /&gt
+    &lt/fieldset&gt
+    &ltfieldset  class=" px5"&gt
+        &ltlegend&gtDefault check boxes&lt/legend&gt
+        &ltdiv&gt
+            &ltinput type="checkbox" id="vehicle1" name="vehicle1" value="Bike"&gt
+            &ltlabel for="vehicle1"&gt I have a bike&lt/label&gt&ltbr&gt
+            &ltinput type="checkbox" id="vehicle2" name="vehicle2" value="Car"&gt
+            &ltlabel for="vehicle2"&gt I have a car&lt/label&gt&ltbr&gt
+            &ltinput type="checkbox" id="vehicle3" name="vehicle3" value="Boat"&gt
+            &ltlabel for="vehicle3"&gt I have a boat&lt/label&gt            
+        &lt/div&gt
+
+    &lt/fieldset&gt
+    &ltfieldset class=" px5"&gt
+        &ltlegend&gtRadio Boxes&lt/legend&gt
+        &ltdiv&gt
+            &lth4&gtDefault Radio buttons&lt/h4&gt
+            &ltinput type="radio" id="male" name="gender" value="male"&gt
+            &ltlabel for="male"&gtMale&lt/label&gt&ltbr&gt
+            &ltinput type="radio" id="female" name="gender" value="female"&gt
+            &ltlabel for="female"&gtFemale&lt/label&gt&ltbr&gt
+            &ltinput type="radio" id="other" name="gender" value="other"&gt
+            &ltlabel for="other"&gtOther&lt/label&gt            
+        &lt/div&gt
+    &lt/fieldset&gt
+
+&lt/form&gt
+                    </pre>                    
+                    
+                </code>               
+            
+                <div class="col-12  cl-code-result cl-bs-solid cl-flex-h-start">
+                    <form action="#" class="cl-align-left">
+                        <fieldset class=" px5">
+                            <legend> Basic form elements</legend>
+                    
+                            <label for="fname">First Name:</label>
+                            <input type="text" name="fname" id='fname'><br />
+                            <label for="lname">Last Name:</label>
+                            <input type="text" name="lname" id='lname'><br />
+                            
+                            <label for="browser">Browser:</label>
+                            <input list="browsers" name="browser" id-="browser">
+                            <datalist id="browsers">
+                                <option value="Internet Explorer">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                            </datalist><br />
+                            
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date"> <br />
+            
+                            <label for="month">Month:</label>
+                            <select id="month">            
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select><br />
+                        
+                            <label for="comments">Comments</label>
+                            <textarea name="comments" id="comments" cols="10" rows="6" placeholder="Enter in 100 words"></textarea><br />
+                        </fieldset>
+                        <fieldset  class=" px5">
+                            <legend>Default check boxes</legend>
+                            <div>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> I have a bike</label><br>
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                <label for="vehicle2"> I have a car</label><br>
+                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                <label for="vehicle3"> I have a boat</label>            
+                            </div>
+            
+                        </fieldset>
+                        <fieldset class=" px5">
+                            <legend>Radio Boxes</legend>
+                            <div>
+                                <h4>Default Radio buttons</h4>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label><br>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label><br>
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>            
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>   
+        </section> <!-- end section forms styles -->  
+
+        <!-- ******************** start components ******************** -->
+
+        <section id="tabPanels">
+            <h3>Tab panels</h3>
+            <p>Tabs are ideal for one/two page web applications where space is less or for displaying content on different topics of same subjects.</p> <br />
+            <p>Swiftly provides horizontal tabbed panels and vertical tabbed panels.</p>
+            <div class="wrapper-fluid" id="tabbed-horizontal">    
+                <h4>Horizontal tabs </h4>
+                <p>Three tabs panel. </p>
+                <ul class="ins-list">
+                    <li> Structure your html using the ids and classes as mentioned in the example code.
+                    </li>
+                    <li>Make a link to <code class="cl-code">swiftly-tabs.js</code> in your html.   
+                    </li>
+                    <li>The names of classes and ids should match those used in javascript. They are <code class="cl-code">.tabcontent</code>, <code class="cl-code">.tablinks</code>, <code class="cl-code"> #defaultopen</code>.  
+                    </li>
+                    <li> The classes used for styling are: <code class="cl-code">.panelh</code>, <code class="cl-code">.hpanelh</code>, <code class="cl-code">.hpanelb</code> and <code class="cl-code">.htabs</code>
+                    </li>
+                </ul>                 
+
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="10" class="cl-code code-txtarea">
+<div class="wrapper-fluid htabs">
+    <div class="row">
+        <div class="col-12 panelh hpanelh">
+            <ul>
+                <li class=" cl-btn tablinks" onclick="openTab(event, 'tab1')" id="defaultOpen" role="button">Tab1</li>
+                <li class=" cl-btn tablinks" onclick="openTab(event, 'tab2')" role="button">Tab2</li>
+                <li class=" cl-btn tablinks" onclick="openTab(event, 'tab3')" role="button">Tab3</li>
+            </ul>
+
+        </div>
+        <div class="col-12 hpanelb">
+            <div id="tab1" class="tabcontent">
+            <h3>Tab1 heading</h3>
+            <p>Content for first tab goes here. lorem 
+            </p>
+            </div>
+
+            <div id="tab2" class="tabcontent">
+                <h3>Tab2 heading</h3>
+                <p>Content for second tab goes here.</p>
+            </div>
+
+            <div id="tab3" class="tabcontent">
+                <h3>Tab3 heading</h3>
+                <p>Content for third tab goes here.</p>
+            </div>
+        </div>
+    </div>
+</div>
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <div class="wrapper-fluid htabs">
+                            <div class="row">
+                                <div class="col-12 panelh hpanelh">
+                                    <ul>
+                                        <li class=" cl-btn tablinks" onclick="openTab(event, 'tab1')" id="defaultOpen" role="button">Tab1</li>
+                                        <li class=" cl-btn tablinks" onclick="openTab(event, 'tab2')" role="button">Tab2</li>
+                                        <li class=" cl-btn tablinks" onclick="openTab(event, 'tab3')" role="button">Tab3</li>
+                                    </ul>
+                    
+                                </div>
+                                <div class="col-12 hpanelb">
+                                    <div id="tab1" class="tabcontent">
+                                    <h3>Tab 1 heading</h3>
+                                    <p>Content for first tab goes here.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, recusandae non. Magnam ipsa sed illo quaerat provident et ullam doloremque rem minima consequatur, vitae natus ea. Accusantium ex distinctio magnam.</p>
+                                    </div>
+                    
+                                    <div id="tab2" class="tabcontent">
+                                        <h3>Tab 2 heading</h3>
+                                        <p>Content for second tab goes here.</p>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem commodi beatae a vel, possimus consequuntur sed amet quisquam qui eveniet laborum voluptatibus sequi aliquam, expedita blanditiis officia ipsa, iusto corrupti?</p>
+                                    </div>
+                    
+                                    <div id="tab3" class="tabcontent">
+                                        <h3>Tab 3 heading</h3>
+                                        <p>Content for third tab goes here.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facere adipisci libero nesciunt molestias impedit voluptatum, fugiat esse, quasi voluptatem, architecto hic? Accusamus excepturi voluptatibus, molestias a reprehenderit aliquam numquam?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>  
+
+            <div class="wrapper-fluid" id="tabbed-vertical">    
+                <h4>Vertical tabs </h4>
+                <p>Three tabs panel. </p>     
+                    <ul class="ins-list">
+                        <li> Structure your html using the ids and classes as mentioned in the example code.
+                        </li>
+                        <li>Make a link to <code class="cl-code">swiftly-tabs.js</code> in your html.   
+                        </li>
+                        <li>The names of classes and ids should match those used in javascript. They are <code class="cl-code">.tabcontent</code>, <code class="cl-code">.tablinks</code>, <code class="cl-code"> #defaultopen</code>.
+                        </li>
+                        <li>  The classes used for styling are: <code class="cl-code">.panelh</code>, <code class="cl-code">.vpanelh</code>, <code class="cl-code">.vpanelb</code> and <code class="cl-code">.vtabs</code>
+                        </li>
+                    </ul>                     
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="10" class="cl-code code-txtarea">
+<div class="wrapper-fluid vtabs">
+    <div class="row">
+        <div class="col-03 panelh vpanelh">
+            <ul>
+                <li class=" cl-btn tablinks cl-txt-center" onclick="openTab(event, 'tab1v')" id="defaultOpen2" role="button">Tab1</li>
+                <li class=" cl-btn tablinks" onclick="openTab(event, 'tab2v')" role="button">Tab2</li>
+                <li class=" cl-btn tablinks" onclick="openTab(event, 'tab3v')" role="button">Tab3</li>
+            </ul>
+
+        </div>
+        <div class="col-09 vpanelb">
+            <div id="tab1v" class="tabcontent">
+            <h3>Heading for tab1</h3>
+            <p>Content for first tab goes here.</p>
+            </div>
+
+            <div id="tab2v" class="tabcontent">
+                <h3>Heading for tab2</h3>
+                <p>Content for second tab goes here.</p>
+            </div>
+
+            <div id="tab3v" class="tabcontent">
+                <h3>Heading for tab3</h3>
+                <p>Content for third tab goes here.</p>
+            </div>
+        </div>
+    </div>
+</div>
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <div class="wrapper-fluid vtabs">
+                            <div class="row">
+                                <div class="col-03 panelh vpanelh">
+                                    <ul>
+                                        <li class=" cl-btn tablinks cl-txt-center" onclick="openTab(event, 'tab1v')" id="defaultOpen2" role="button">Tab1</li>
+                                        <li class=" cl-btn tablinks" onclick="openTab(event, 'tab2v')" role="button">Tab2</li>
+                                        <li class=" cl-btn tablinks" onclick="openTab(event, 'tab3v')" role="button">Tab3</li>
+                                    </ul>
+                    
+                                </div>
+                                <div class="col-09 vpanelb">
+                                    <div id="tab1v" class="tabcontent">
+                                    <h3>Heading for tab 1</h3>
+                                    <p>Content for first tab goes here.</p>
+                                    </div>
+                    
+                                    <div id="tab2v" class="tabcontent">
+                                        <h3>Heading for tab 2</h3>
+                                        <p>Content for second tab goes here.</p>
+                                    </div>
+                    
+                                    <div id="tab3v" class="tabcontent">
+                                        <h3>Heading for tab 3</h3>
+                                        <p>Content for third tab goes here.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div> 
+        </section> <!-- end section tab panels -->
+
+        <!-- <section class="cl-ss " id="slideshow"> -->
+        <section id="slideshow">
+            <div class="wrapper-fluid" >    
+                <h4>Slideshow with controls </h4><br />
+                <p>The ability to automate the display of images, in a round robin continuously, can be achieved using this component. It also provides the ability to play/pause the slideshow. <br />
+                    You could also manually move to the next or previous images.
+                </p>
+
+                <ul class="ins-list">
+                    <li> Structure your html using the ids and classes as mentioned in the example code. </li>
+                    <li> Make a link to <code class="cl-code">swiftly-slideshow.js</code> in your html.   </li>
+                    <li>The names of classes and ids should match those used in javascript. They are classes: <code class="cl-code">.cl-ss-slide</code>, <code class="cl-code">.showing</code>, and ids: <code class="cl-code"> #slides</code>, <code class="cl-code"> #pause</code>, <code class="cl-code"> #prev</code> and <code class="cl-code"> #next</code>.  </li>
+                    <li>The classes used for styling are: <code class="cl-code">.cl-ss</code>(for container), <code class="cl-code">.cl-ss-ul</code>, <code class="cl-code">.cl-ss-controller</code> and <code class="cl-code">.cl-ss-controls</code></li>
+                </ul>            
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="10" class="cl-code code-txtarea">
+<div class="cl-ss">
+    <div>
+        <div class="cl-ss-controller">
+            <button class="cl-ss-controls" id="prev">
+                <i class="fas fa-chevron-circle-left"></i>
+            </button>
+
+            <button class="cl-ss-controls" id="pause">
+                <i class="fas fa-pause-circle"></i>
+            </button >
+
+            <button class="cl-ss-controls" id=next>
+                <i class="fas fa-chevron-circle-right"></i>
+            </button>
+        </div>
+    
+        <ul id="slides" class="cl-ss-ul">
+            <li class="cl-ss-slide showing"><img src="../images/jumbotron-sh1.jpg" alt="graphic art"></li>
+            <li class="cl-ss-slide"><img src="../images/jumbotron-sh2.jpg" alt="graphic art" ></li>
+            <li class="cl-ss-slide"><img src="../images/jumbotron-sh3.jpg" alt="graphic art" ></li>
+            <li class="cl-ss-slide"><img src="../images/jumbotron-sh4.jpg" alt="graphic art"></li>
+            <li class="cl-ss-slide"><img src="../images/jumbotron-sh5.jpg" alt="graphic art"></li>
+            <li class="cl-ss-slide"><img src="../images/jumbotron-sh6.jpg" alt="graphic art" ></li>
+        </ul>
+    </div>
+</div> 
+                        </textarea>                            
+                    </code>               
+                
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">Javascript</p>
+                        <textarea name="" id=""  rows="10" class="cl-code code-txtarea">
+var slides = document.querySelectorAll('#slides .cl-ss-slide');
+var currentSlide = 0;
+var slideTimer = setInterval(nextSlide,1500); 
+
+function autoSlide(n){
+    slides[currentSlide].className = 'cl-ss-slide';
+    currentSlide = (n+slides.length)%slides.length; 
+    slides[currentSlide].className = 'cl-ss-slide showing';
+}
+
+var playing = true;
+var pauseBtn = document.getElementById('pause');
+
+function pauseSS() {                
+    pauseBtn.innerHTML = '<i class="fas fa-play-circle"></i>';
+    playing = false;
+    clearInterval(slideTimer);
+}
+function playSS(){
+    playing = true;
+    pauseBtn.innerHTML = '<i class="fas fa-pause-circle"></i>';
+    slideTimer = setInterval(nextSlide,1500);
+}
+
+pauseBtn.addEventListener('click', function(){
+    if(playing){    
+        pauseSS();
+    }else{
+        playSS();
+    }
+});
+
+function nextSlide() {
+            autoSlide(currentSlide + 1);
+}
+function prevSlide() {
+            autoSlide(currentSlide - 1);
+}
+
+var nextBtn = document.getElementById('next');
+var prevBtn = document.getElementById('prev');
+nextBtn.addEventListener('click', function(){
+    pauseSS();
+    nextSlide();
+})
+prevBtn.addEventListener('click', function(){
+    pauseSS();
+    prevSlide();
+})
+                        </textarea>                            
+                    </code>   
+                    
+                    <div class="col-12  cl-code-result cl-bs-solid" id="slide-container">
+                        <div class="cl-ss">
+                            <div>
+                                <div class="cl-ss-controller">
+                                    <button class="cl-ss-controls" id="prev">
+                                        <i class="fas fa-chevron-circle-left"></i>
+                                    </button>
+                
+                                    <button class="cl-ss-controls" id="pause">
+                                        <i class="fas fa-pause-circle"></i>
+                                    </button >
+                
+                                    <button class="cl-ss-controls" id=next>
+                                        <i class="fas fa-chevron-circle-right"></i>
+                                    </button>
+                                </div>
+                            
+                                <ul id="slides" class="cl-ss-ul">
+                                    <li class="cl-ss-slide showing"><img src="../images/jumbotron-sh1.jpg" alt="graphic art"></li>
+                                    <li class="cl-ss-slide"><img src="../images/jumbotron-sh2.jpg" alt="graphic art" ></li>
+                                    <li class="cl-ss-slide"><img src="../images/jumbotron-sh3.jpg" alt="graphic art" ></li>
+                                    <li class="cl-ss-slide"><img src="../images/jumbotron-sh4.jpg" alt="graphic art"></li>
+                                    <li class="cl-ss-slide"><img src="../images/jumbotron-sh5.jpg" alt="graphic art"></li>
+                                    <li class="cl-ss-slide"><img src="../images/jumbotron-sh6.jpg" alt="graphic art" ></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </section>
+
+        <!-- for jumbotron -->
+        <section id="jumbotron-doc">
+            <h3>Jumbotron</h3>
+            <p>Jumbotrons are ideal for presenting focus text to your consumer. </p> <br />
+            <p>Swiftly provides the option to do so, with just text or with image background</p>
+            <div class="wrapper-fluid" id="jumb-noimg">    
+                <h4> Simple Jumbotron </h4>
+                <ul class="ins-list">
+                    <li> Structure your html using the classes as mentioned in the example code.
+                    </li>
+                    <li>Make a link to <code class="cl-code">swiftly.min.css</code>  or <code class="cl-code">swiftly.css</code> in your html.   
+                    </li>
+                    <li> The class used for styling is: <code class="cl-code">.jumbotron</code>. This add default padding and margin.
+                    </li>
+                    <li> To use full width of the page add class: <code class="cl-code">.jumbotron-fluid</code> to your container element.
+                    </li>
+                </ul>                 
+
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="10" class="cl-code code-txtarea">
+        <div id="j-noimg" class="jumbotron">
+            <div class="wrapper-fluid">
+                <h1 class="h1"> Title </h1>
+                <h4>Some content here </h4>                        
+                <p >This is a simple hero unit, component, for calling extra attention to featured content or information.</p>
+                <br />
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="cl-btn" href="#" role="button">Learn more</a>
+            </div>
+        </div> 
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <div id="j-noimg" class="jumbotron">
+                            <div class="wrapper-fluid">
+                                <h1 class="h1"> Title </h1>
+                                <h4>Some content here </h4>                        
+                                <p >This is a simple hero unit, component, for calling extra attention to featured content or information.</p>
+                                <br />
+                                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                                <a class="cl-btn" href="#" role="button">Learn more</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>   
+            </div>  
+
+            <div class="wrapper-fluid" id="jumb-img">    
+                <h4>Jumbotron with Image </h4>
+                <!-- <p>Three tabs panel. </p>      -->
+                <ul class="ins-list">
+                    <li> Structure your html using the classes as mentioned in the example code.
+                    </li>
+                    <li>Make a link to <code class="cl-code">swiftly.min.css</code>  or <code class="cl-code">swiftly.css</code> in your html.   
+                    </li>
+                    <li> The class used for styling is <code class="cl-code">.jumbotron</code>. This add default padding and margin.
+                    </li>
+                    <li> To use full width of the page add class <code class="cl-code">.jumbotron-fluid</code> to your container element.
+                    </li>
+                    <li> To provide image for the background add class <code class="cl-code">.jumbotron-img</code> to your container element. Override it in your css to specify the image source. Default gradient is provided as fallback in the event of image not available.<br />
+                        <code class="cl-code">
+                            
+                            #j-img.jumbotron-img{
+                                background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../images/bg-jumbotron500.jpg");
+                                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/bg-jumbotron500.jpg");
+                            }
+                        </code>
+                    </li>
+                </ul>                       
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="10" class="cl-code code-txtarea">
+        <div id="j-img" class="jumbotron jumbotron-img ">
+            <div class="wrapper-fluid">
+                <h1 class="h1"> Title </h1>
+                <h4>Some content here </h4>
+                
+                <p >This is a simple hero unit, component, for calling extra attention to featured content or information.</p>
+                <br />
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="cl-btn" href="#" role="button">Learn more</a>
+            </div>
+        </div> 
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <div id="j-img" class="jumbotron jumbotron-img ">
+                            <div class="wrapper-fluid">
+                                <h1 class="h1"> Title </h1>
+                                <h4>Some content here </h4>
+                                
+                                <p >This is a simple hero unit, component, for calling extra attention to featured content or information.</p>
+                                <br />
+                                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                                <a class="cl-btn" href="#" role="button">Learn more</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>   
+            </div> 
+        </section> <!-- end jumbotron -->
+
+
+        <section id="navigation-menu">
+            <h2>Navigation</h2>
+            <p>The framework provides different types of navigation or menu styles. </p> <br />
+            <p>These are responsive to small screens. They are simple horizontal navigation bar, simple vertical navigation bar and dropdown nav with stick left nav. </p>
+
+            <div class="wrapper-fluid" id="rhnav-drp">    
+                <h4> Responsive Horizontal Navigation </h4>
+
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="15" class="cl-code code-txtarea">
+        &lt;nav class="nav-01H" id="nav-H"&gt; 
+<p class="cl-bold">// to use vertical navigation swap out the H in class and id with V </p>
+        &lt;div&gt;
+        &lt;input type="checkbox" id="toggle" /&gt;
+        &lt;label for="toggle"&gt;Menu&lt;/label&gt; 
+            &lt;nav class="nav-01-nav"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Lev01 - Pg1&lt;/a&gt;&lt;/li&gt;
+<p class="cl-bold">// beginning of html for drop-down choices </p>
+                &lt;li class="dropdown"&gt;&lt;a href="javascript:void(0)" class="dropbtnH"&gt;Dropdown &lt;span&gt;&#8595;&lt;/span&gt;&lt;/a&gt;
+<p class="cl-bold">// no need to change class "dropbtnH" for vertical menu as drop-down content is vertical as default </p>>               
+                &lt;div class="dropdown-content"&gt;
+                    &lt;a href="#"&gt;Lev02 - Pg1&lt;/a&gt;
+                    &lt;a href="#"&gt;Lev02 - Pg2&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+<p class="cl-bold">// end of html for drop-down choices - exclude the code section above for no drop-down </p>
+                &lt;li&gt;&lt;a href="#"&gt;Lev01 - Pg2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Lev01 - Pg3&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;div class="clearIt"&gt;&lt;/div&gt;
+            &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <h5>Responsive Horizontal Navigation With Drop Down</h5>
+                        <nav class="nav-01H" id="nav-H"> 
+                            <div>
+                            <input type="checkbox" id="toggle" />
+                            <label for="toggle">Menu</label> 
+                            <nav class="nav-01-nav">
+                                <ul>
+                                <li><a href="#">Lev01 - Pg1</a></li>
+                                <li class="dropdown"><a href="javascript:void(0)" class="dropbtnH">Dropdown <span>&#8595;</span></a>
+                                <div class="dropdown-content">
+                                    <a href="#">Lev02 - Pg1</a>
+                                    <a href="#">Lev02 - Pg2</a>
+                                </div>
+                            </li>
+                                <li><a href="#">Lev01 - Pg2</a></li>
+                                <li><a href="#">Lev01 - Pg3</a></li>
+                                </ul>
+                                <div class="clearIt"></div>
+                            </nav>
+                            </div>
+                        </nav>
+                    </div>
+                </div>   
+            </div> 
+            <!-- end rhnav-drp dropdown responsive horizontal  navbar -->
+
+            <div class="wrapper-fluid" id="rvnav-drp">    
+                <h4> Responsive Vertical Navigation </h4>
+                <p>The responsive vertical navigation with dropdown is built the same as the horizontal one. The only difference is the classes and id's used. They are: <code class="cl-code">.nav-01V</code>, and <code class="cl-code">#nav-V</code> in place of <code class="cl-code">.nav-01H</code>, and <code class="cl-code">#nav-H</code> </p> <br />
+                <p>If you choose to not include the dropdown content, simply include a regular link. </p>
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p> <br />
+                        <textarea name="" id=""  rows="15" class="cl-code code-txtarea">
+<nav class="nav-01V" id="nav-V"> 
+    <div>
+    <input type="checkbox" id="toggle" />
+    <label for="toggle">Menu</label> 
+    <nav class="nav-01-nav">
+        <ul>
+        <li><a href="#">Lev01 - Pg1</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtnH">Dropdown <span>&#8595;</span></a>
+        <div class="dropdown-content">
+            <a href="#">Lev02 - Pg1</a>
+            <a href="#">Lev02 - Pg2</a>
+        </div>
+    </li>
+        <li><a href="#">Lev01 - Pg2</a></li>
+        <li><a href="#">Lev01 - Pg3</a></li>
+        </ul>
+        <div class="clearIt"></div>
+    </nav>
+    </div>
+</nav>
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <h5>Responsive Vertical Navigation With Drop Down</h55>
+                        <nav class="nav-01V" id="nav-V"> 
+                            <div>
+                            <input type="checkbox" id="toggle" />
+                            <label for="toggle">Menu</label> 
+                            <nav class="nav-01-nav">
+                                <ul>
+                                <li><a href="#">Lev01 - Pg1</a></li>
+                                <li class="dropdown"><a href="javascript:void(0)" class="dropbtnH">Dropdown <span>&#8595;</span></a>
+                                <div class="dropdown-content">
+                                    <a href="#">Lev02 - Pg1</a>
+                                    <a href="#">Lev02 - Pg2</a>
+                                </div>
+                            </li>
+                                <li><a href="#">Lev01 - Pg2</a></li>
+                                <li><a href="#">Lev01 - Pg3</a></li>
+                                </ul>
+                                <div class="clearIt"></div>
+                            </nav>
+                            </div>
+                        </nav>
+                    </div>
+                </div>   
+            </div>
+            <!-- end rvnav-drp dropdown responsive vertical navbar -->
+            
+            <div class="wrapper-fluid" id="rvnav-bar">    
+                <h4> Responsive Vertical Navigation </h4>
+                <p> This example shows a simple navigation with options aligned vertically.</p> <br />
+                <p>Pay special attention to using the same class and id names. </p>
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="8" class="cl-code code-txtarea">
+<nav class="nav-01V" id="nav-V"> 
+    <div>
+    <input type="checkbox" id="toggle1" />
+    <label for="toggle1">Menu</label> 
+    <nav class="nav-01-nav">
+        <ul>
+        <li><a href="#">Lev01 - Pg1</a></li>
+        <li><a href="#">Lev01 - Pg2</a></li>
+        <li><a href="#">Lev01 - Pg3</a></li>
+        </ul>
+        <div class="clearIt"></div>
+    </nav>
+    </div>
+</nav>
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <h5>Simple Responsive Vertical Navigation</h5>
+                        <nav class="nav-01V" id="nav-V"> 
+                            <div>
+                            <input type="checkbox" id="toggle1" />
+                            <label for="toggle1">Menu</label> 
+                            <nav class="nav-01-nav">
+                                <ul>
+                                <li><a href="#">Lev01 - Pg1</a></li>
+                                <li><a href="#">Lev01 - Pg2</a></li>
+                                <li><a href="#">Lev01 - Pg3</a></li>
+                                </ul>
+                                <div class="clearIt"></div>
+                            </nav>
+                            </div>
+                        </nav>
+                    </div>
+                </div>   
+            </div>
+
+
+
+        </section> <!-- end section navigation -->
+
+        <section id="frameGrid"">
+            <div class="cl-headers">
+                <hr class="hr" />
+                <h2>GRID System</h2>
+                <hr class="hr" />
+            </div>
+            <p>The framework provides a responsive Grid.  </p> <br />
+            <p>It is based on the 12 column grid system which is a popular industry standars.. </p>            
+            <div class="wrapper-fluid" id="rgrid-equal-sizing">    
+                <h4> Responsive Grid with Equal Sizing </h4>
+                <p class="cl-italic"> All Rows with Class=".col-XX" Should Add to no more than 12 </p> <br />
+                <!-- <p>Pay special attention to using the same class and id names. </p><br /> -->
+                <!-- <p>Make to include the link to the javascript.</p> -->
+
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="15" class="cl-code code-txtarea">
+                            <div class="row">
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-01">12x".col-01"</div>
+                                <div class="col-02">6x".col-02"</div>
+                                <div class="col-02">6x".col-02"</div>
+                                <div class="col-02">6x".col-02"</div>
+                                <div class="col-02">6x".col-02"</div>
+                                <div class="col-02">6x".col-02"</div>
+                                <div class="col-02">6x".col-02"</div>
+                                <div class="col-03">4x3Col</div>
+                                <div class="col-03">4x3Col</div>
+                                <div class="col-03">4x3Col</div>
+                                <div class="col-03">4x3Col</div>
+                                <div class="col-04">3x4Col</div>
+                                <div class="col-04">3x4Col</div>
+                                <div class="col-04">3x4Col</div>
+                                <div class="col-05">2x5Col</div>
+                                <div class="col-05">2x5Col</div>
+                                <div class="col-06">2x6Col</div>
+                                <div class="col-06">2x6Col</div>
+                            </div>
+                        <!-- NOTE class 'wrapper' used on container tag -->
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <!-- <h1>Examples With Equal Sizing</h1>-->
+                        <h3>All Rows with Class=".col-XX" Should Add to no more than 12</h3> 
+                        <div class="row">
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-01">12x".col-01"</div>
+                            <div class="col-02">6x".col-02"</div>
+                            <div class="col-02">6x".col-02"</div>
+                            <div class="col-02">6x".col-02"</div>
+                            <div class="col-02">6x".col-02"</div>
+                            <div class="col-02">6x".col-02"</div>
+                            <div class="col-02">6x".col-02"</div>
+                            <div class="col-03">4x3Col</div>
+                            <div class="col-03">4x3Col</div>
+                            <div class="col-03">4x3Col</div>
+                            <div class="col-03">4x3Col</div>
+                            <div class="col-04">3x4Col</div>
+                            <div class="col-04">3x4Col</div>
+                            <div class="col-04">3x4Col</div>
+                            <div class="col-05">2x5Col</div>
+                            <div class="col-05">2x5Col</div>
+                            <div class="col-06">2x6Col</div>
+                            <div class="col-06">2x6Col</div>
+                        </div> 
+                    </div>
+                </div>   
+            </div>
+
+            <div class="wrapper-fluid" id="rgrid-unequal-sizing">    
+                <h4> Responsive Grid with Unequal Sizing </h4>
+                <p class="cl-italic"> All Rows with Class=".col-XX" Should Add to no more than 12 (adding the XX) </p> <br />
+                <!-- <p>Pay special attention to using the same class and id names. </p><br /> -->
+                <!-- <p>Make to include the link to the javascript.</p> -->
+
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="5" class="cl-code code-txtarea">
+&ltdiv class="row"&gt
+&ltdiv class="col-01"&gt1x".col-01"&lt/div&gt
+&ltdiv class="col-02"&gt1x".col-02"&lt/div&gt
+&ltdiv class="col-03"&gt1x".col-03"&lt/div&gt
+&ltdiv class="col-06"&gt1x".col-06"&lt/div&gt
+&lt/div&gt
+<!-- NOTE class 'wrapper' used on container tag -->
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <div class="row">
+                            <div class="col-01">1x".col-01"</div>
+                            <div class="col-02">1x".col-02"</div>
+                            <div class="col-03">1x".col-03"</div>
+                            <div class="col-06">1x".col-06"</div>
+                        </div>
+                    </div>
+                </div>   
+            </div>            
+
+            <div class="wrapper-fluid" id="rgrid-uneven-rows">    
+                <h4> Responsive Grid with Uneven Rows </h4>
+                <!-- <p class="cl-italic"> All Rows with Class=".col-XX" Should Add to no more than 12 (adding the XX) </p> <br /> -->
+                <!-- <p>Pay special attention to using the same class and id names. </p><br /> -->
+                <!-- <p>Make to include the link to the javascript.</p> -->
+
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="5" class="cl-code code-txtarea">
+&ltdiv class="row"&gt -- primary row level --
+&ltdiv class="col-03"&gt
+    &ltp&gtcol-03 First Row&lt/p&gt
+&lt/div&gt
+&ltdiv class="col-07"&gt -- primary row level -- col-07 is placeholder / container for nested rows below --
+    &ltdiv class="row"&gt
+        -- first secondary row --
+    &ltdiv class="col-12"&gt
+            &ltp&gtThis is "col-12" nested within "col-07"&lt/p&gt  
+    &lt/div&gt
+    &lt/div&gt
+    &ltdiv class="row"&gt
+        -- second secondary row --
+    &ltdiv class="col-03"&gt
+        &ltp&gtcol-03 nested within the col-07&lt/p&gt
+    &lt/div&gt
+    &ltdiv class="col-09"&gt
+        &ltp&gtcol-09 nested within col-07&lt/p&gt
+    &lt/div&gt
+    &lt/div&gt
+    &ltdiv class="row"&gt -- third secondary row --
+    &ltdiv class="col-06"&gt
+        &ltp&gt"col-06" within "col-07"&lt/p&gt
+    &lt/div&gt
+    &ltdiv class="col-06"&gt
+        &ltp&gt"col-06" within "col-07"&lt/p&gt
+    &lt/div&gt
+    &lt/div&gt
+    &ltdiv class="row"&gt -- fourth secondary row --
+    &ltdiv class="col-08"&gt
+        &ltp&gt"col-08" within "col-07"&lt/p&gt
+    &lt/div&gt
+    &ltdiv class="col-04"&gt
+        &ltp&gt"col-04" within "col-07"&lt/p&gt
+    &lt/div&gt
+    &lt/div&gt     
+&lt/div&gt -- end primary row col-07 --
+&ltdiv class="col-02"&gt -- primary row level  --
+    &ltp&gtcol-02 at top level row&lt/p&gt
+&lt/div&gt
+&lt/div&gt -- end primary row --
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <div class="row"><!-- primary row level -->
+                            <div class="col-03">
+                                <p>col-03 First Row</p>
+                            </div>
+                            <div class="col-07"><!-- primary row level -->
+                            <!-- col-07 is placeholder / container for nested rows below -->
+                                <div class="row">
+                                    <!-- first secondary row -->
+                                <div class="col-12">
+                                        <p>This is "col-12" nested within "col-07"</p>  
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <!-- second secondary row -->
+                                <div class="col-03">
+                                    <p>col-03 nested within the col-07</p>
+                                </div>
+                                <div class="col-09">
+                                    <p>col-09 nested within col-07</p>
+                                </div>
+                                </div>
+                                <div class="row"><!-- third secondary row -->
+                                <div class="col-06">
+                                    <p>"col-06" within "col-07"</p>
+                                </div>
+                                <div class="col-06">
+                                    <p>"col-06" within "col-07"</p>
+                                </div>
+                                </div>
+                                <div class="row"><!-- fourth secondary row -->
+                                <div class="col-08">
+                                    <p>"col-08" within "col-07"</p>
+                                </div>
+                                <div class="col-04">
+                                    <p>"col-04" within "col-07"</p>
+                                </div>
+                                </div>     
+                            </div><!-- end primary row col-07 -->
+                            <div class="col-02"><!-- primary row level  -->
+                                <p>col-02 at top level row</p>
+                            </div>
+                            </div><!-- end primary row -->
+                    </div>
+                </div>   
+            </div> 
+            
+
+            <div class="wrapper-fluid" id="rgrid-mov-col">    
+                <h4> Responsive Grid with moving columns </h4>
+                <!-- <p class="cl-italic"> All Rows with Class=".col-XX" Should Add to no more than 12 (adding the XX) </p> <br /> -->
+                <!-- <p>Pay special attention to using the same class and id names. </p><br /> -->
+                <!-- <p>Make to include the link to the javascript.</p> -->
+
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="10" class="cl-code code-txtarea">
+    &ltdiv class="row"&gt
+    &ltdiv class="col-06"&gtFirst "col-06" class&lt/div&gt
+    &ltdiv class="col-06"&gtSecond "col-06" class&lt/div&gt
+    &ltdiv class="col-06 moveR-06"&gtFirst with "col-06 moveR-06" class&lt/div&gt
+    &ltdiv class="col-06 moveL-06"&gtSecond with "col-06 moveL-06" class&lt/div&gt
+&lt/div&gt
+<!-- NOTE class 'wrapper' used on container tag -->
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <div class="row">
+                            <div class="col-06">First "col-06" class</div>
+                            <div class="col-06">Second "col-06" class</div>
+                            <div class="col-06 moveR-06">First with "col-06 moveR-06" class</div>
+                            <div class="col-06 moveL-06">Second with "col-06 moveL-06" class</div>
+                        </div>
+                    </div>
+                </div>   
+            </div>        
+            
+
+            <div class="wrapper-fluid" id="rgrid-col-mar">    
+                <h4> Responsive Grid using columns as margin </h4>
+                <!-- <p class="cl-italic"> All Rows with Class=".col-XX" Should Add to no more than 12 (adding the XX) </p> <br /> -->
+                <!-- <p>Pay special attention to using the same class and id names. </p><br /> -->
+                <!-- <p>Make to include the link to the javascript.</p> -->
+
+                <div class=" row cl-code-bg ">                    
+                    <code class="col-12  cl-self-center cl-bs-solid"> 
+                        <p class="cl-font-open-sans ins-ptitle">HTML with classes</p>
+                        <textarea name="" id=""  rows="10" class="cl-code code-txtarea">
+&ltdiv class="row"&gt
+&ltdiv class="marginL-01 col-05"&gtFirst "col-05" class&lt/div&gt
+&ltdiv class="col-05 marginR-01"&gtSecond "col-05" class&lt/div&gt
+&lt/div&gt
+<!-- NOTE class 'wrapper' used on container tag -->
+                        </textarea>                            
+                    </code>               
+                
+                    <div class="col-12  cl-code-result cl-bs-solid cl-align-center">
+                        <div class="row">
+                            <div class="marginL-01 col-05">First "col-05" class</div>
+                            <div class="col-05 marginR-01">Second "col-05" class</div>
+                        </div>
+                    </div>
+                </div>   
+            </div>             
+            
+        </section>
+        
+        <!-- ******************** end components ******************** -->
+
+
+
+
+
+
+
+    </div> <!-- end wrapper div of body content -->
+
+    <footer class="footer-area ">
+        <div>
+          <div>
+            <!-- <div class="site-logo cl-align-center py5" id="idFLogo"> -->
+            <div class="cl-align-center py5" id="idFLogo">
+              <a href="#doc-body"><img src="../images/logo-50-trans.png" alt="logo"></a>
+            </div>
+            <div class="social cl-align-center">
+              <p class="cl-txt-upper cl-font-open-sans cl-bold">Follow me</p>
+              <a href="#" id="idFB"><i class="fab fa-facebook"></i></a>
+              <a href="#" id="idLN"><i class="fab fa-linkedin"></i></a>
+              <a href="#" id="idGH"><i class="fab fa-github"></i></a>
+              <a href="#" id="idIN"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyrights text-center">
+              <p class="cl-align-center py5">
+                Copright &copy; SWIFTLY 2019 all rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    <script src="../scripts/swiftly-tabs.js"></script>
+    <script src="../scripts/swiftly-slideshow.js"></script>
+ </body>
+</html>
+

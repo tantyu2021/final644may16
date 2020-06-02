@@ -1,0 +1,193 @@
+/**************************************************************************************
+                THEME ONE - named Aesthetic. All classes for this theme begin with letter a
+ **************************************************************************************/   
+/* 
+        
+// theme1 colors  
+/*base colors used are already a part of _variables
+$white:  #fff;
+$black:  #000;
+$white2: #f7f7f7;// rgb(247, 247, 247)* header,footer color
+
+$lgray:  #dfdfdf; //rgb(194, 194, 194)
+$gray:   #c2c2c2; //rgb(194, 194, 194)
+$mgray:  #656666; //rgb(101, 102, 102)
+$dgray:  #1e1f1f; // rgb(30, 31, 31)
+$blue2:  #1d305c; //rgb(29, 48, 92) *head foot bgcolor, page txt, 
+$code:   #e61212; //
+
+$link:      #0c47c7;
+$lvisited:  #43088f;
+$lactive:   #5c89eb;
+$lhover:    #5c89eb;
+$lfocus:    #5c89eb;
+*/
+$lightred: #f0ece5;
+$medred:  #bb9755;
+$darkred: #867230; ///rgb(139,0,0)
+$bgred: #745b09;//rgb(235, 231, 231);//
+
+// variables for font-family
+// $a-font-san-serif: Poppins,Lato,'Open Sans', sans-serif;
+// $a-font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// $a-fontwriting: cookie, satisfy, "dancing-script" ,cursive;
+// $a-font-disp: "balsamiq sans",lobster, serif;
+
+.baketheme{ 
+    background-color: $white2;
+    color: $blue2;
+    p, li{ 
+      font-family: "balsamiq sans",lobster, serif;
+      color: $bgred;
+    }
+    h1,.h1 { font-family:  "balsamiq sans",lobster, serif; color: $darkred;}
+    h2,.h1{ font-family:  "balsamiq sans",lobster, serif; color: $darkred;}
+    h3,.h3{ font-family:  "balsamiq sans",lobster, serif; color: $darkred;}
+    h4,.h4{ font-family:  "balsamiq sans",lobster, serif; color: $darkred;}
+    h5,.h5{ font-family:  "balsamiq sans",lobster, serif; color: $darkred;}
+    h6,.h6{ font-family:  "balsamiq sans",lobster, serif; color: $darkred;}
+    hr, .hr{ color: $darkred;}
+    border-color: $lightred;
+    .cl-btn{    
+      background-color: $darkred;
+      color: $lightred;
+      margin: .2em 0;
+      padding: .5em;
+      font-family:  "balsamiq sans",lobster, serif;
+      &:hover {
+        background-color: $white2;
+        color: $darkred;
+        border: solid 1px $darkred;
+      }
+      &:active{
+        background-color: $lightred;
+        color: $medred;
+        border: solid 1px $darkred;
+      }
+    }
+    .cl-bs-solid{border-color: $bgred;}
+    .cl-bs-groove{ border-color: $bgred;}
+    .cl-bs-ridge{ border-color:$bgred;}
+    .cl-bs-dotted{ border-color: $bgred;}
+    .cl-bs-outset{ border-color: $bgred;}
+    .cl-bs-double{ border-color: $bgred;}
+    .cl-ss-controller{
+      background-color: $darkred;
+      border-color: $darkred;
+    }
+    .cl-ss-ul > li >img{ outline-color: $darkred;}
+    .cl-table {
+      font-family: "balsamiq sans",lobster, serif;
+      background-color: $tbl-background;
+      caption{ 
+        color: $darkred;
+        font-size: 2rem; 
+        text-align: center;
+      }
+      thead {
+        border-color: $tbl-border;
+        background-color: $tbl-hdr-background;
+      }
+      tbody {
+          tr {
+              &:nth-child(odd){
+                background-color: transparentize($lightred, .7);
+                &:hover{background-color: opacify($lightred, .3); }
+              }             
+              &:nth-child(even){
+                  background-color: transparentize($bgred, .7);
+                      &:hover{
+                          background-color: opacify($bgred, .3);
+                      }
+                  }  
+          }
+        }
+    }
+    header{
+      background-color: $lightred;
+      p,li{ color: $white2;}
+      // nav{
+      //   background-color: $bgred;
+      //   p,li{ color: $white2;}
+      // }
+    }
+    nav{
+      background-color: $bgred;
+      p,li{ color: $lightred;}
+      a{
+        color: $lightred;
+      }
+      
+      border: 1px solid $medred;
+    }
+    .nav-01H li a:hover, .nav-01H .dropdown:hover .dropbtnH, .nav-01V li a:hover, .nav-01V .dropdown:hover .dropbtnH   {
+      background-color: $medred;
+      color: $bgred;
+    }
+    #nav-H label, #nav-V label {
+      background-color: $bgred;
+    }
+    footer{
+      background-color: $lightred;
+      color: $darkred;
+      font-size: 85%;
+      p,li,a{
+          color: $darkred;
+      }
+      a{
+          &:visited{color: $gray;}
+          &:hover{ color: opacify($white2, .3);}
+          &:active{ color: $gray;}
+      }
+      @include break($breakpoint-md){
+        font-size: 92%;
+      }
+    }
+  // added to allow active class is tab panel to do something
+  div.panelh li.active {
+    color: $medred;
+    background-color: $lightred;
+  }
+  // format the text input fields
+  input[type="text"], input[type="email"], input[type="submit"], textarea {
+      font-size:1.2rem;
+      color: $bgred;
+      font-family:  "balsamiq sans",lobster, serif; 
+      background-color: $lightred;
+  }
+  input {
+    height: 100%;
+  }
+  // moved to local css - not applicable to global theme
+  // label, select, select option, #results {
+  //   font-family: "balsamiq sans",lobster, serif; 
+  //   color: $darkred;
+  //   font-size: 1.2em;
+  // }
+  // .howWork1 {
+  //   border-bottom: 1px solid $bgred;
+  // }
+  // #faq, #howWorks {
+  //   margin-top: 2%;
+  // }
+  // @media only screen and (min-width: 684px) {
+  //   .howWork1 {
+  //     border-bottom: none;
+  //     border-right: 1px solid $bgred;
+  //   }
+  // }  
+}
+
+.cl-bake-even{background-color: transparentize($medred, .6);}
+.cl-bake-odd{background-color: transparentize($bgred, .6);}
+
+.cl-bake-even-hover:hover{background-color: opacify($medred, .6);}
+.cl-bake-odd-hover:hover{background-color: opacify($bgred, .6);}
+
+//general class to allow to use color as background
+.cl-bake-bgcolor{
+  background-color: $darkred;
+}
+.cl-bake-txtcolor{
+  color: $darkred;
+}

@@ -1,0 +1,203 @@
+$lgray:  #dfdfdf; //rgb(194, 194, 194)
+$gray:   #c2c2c2; //rgb(194, 194, 194)
+$mgray:  #656666; //rgb(101, 102, 102)
+$dgray:  #1e1f1f; // rgb(30, 31, 31)
+
+// section {
+//     border: solid 1px saddlebrown;
+// }
+
+.nav-01-nav {
+    background-color: $lgray;
+    border-top: solid 1px $gray;
+}
+
+.nav-01-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-01-nav li {
+    margin: 0;
+    border-bottom: solid 1px $gray;
+}
+
+.nav-01-nav li a {
+    display: block;
+    padding: .5em;
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-H nav, #nav-V nav, #nav-F nav {
+    height: 0;
+    overflow: hidden;
+}
+
+body { 
+    -webkit-animation: bugfix infinite 1s; }
+  @-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} 
+}
+
+#nav-H input[type=checkbox], #nav-V input[type=checkbox], #nav-F input[type=checkbox] {
+    position: absolute;
+    left: -999em;
+    top: -999em;
+}
+
+#nav-H label, #nav-V label, #nav-F label {
+    display: block;
+    background: url(../../dist/images/hamburger-menu-36-white.svg) no-repeat right center;
+    text-indent: -999em;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+    position: relative;
+    top: -7px; 
+    right: 5px;
+    // background-color: $lgray;
+    height: 40px;
+}
+
+#nav-H input[type=checkbox]:checked ~ nav  {
+    height: auto;
+    overflow: hidden;
+    
+}
+
+#nav-V input[type=checkbox]:checked ~ nav {
+    height: auto;
+    overflow: hidden;
+    
+}
+
+#nav-F input[type=checkbox]:checked ~ nav  {
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.nav-01H .dropbtnH, .nav-01V .dropbtnH, .nav-01V .dropbtnF  {
+    display: block;
+    color: inherit;
+    background-color: $lgray;
+    text-decoration: none;
+  }
+  
+  .nav-01H li a:hover, .nav-01H .dropdown:hover .dropbtnH, .nav-01V li a:hover, .nav-01V .dropdown:hover .dropbtnH , .nav-01F li a:hover, .nav-01F .dropdown:hover .dropbtnF {
+    background-color: $white;
+    color: $lgray;
+  }
+  .nav-01H .dropdown, .nav-01V .dropdown, .nav-01F .dropdown {
+    display: block;
+    // color: $black;
+  }
+  .nav-01H .dropdown-content, .nav-01V .dropdown-content, .nav-01F .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $lgray;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 40px;
+  }
+  .nav-01H .dropdown-content a, .nav-01V .dropdown-content a, .nav-01F .dropdown-content a {
+    // color: $gray;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    position: relative;
+  }
+  .nav-01H .dropdown-content a:hover, .nav-01V .dropdown-content a:hover, .nav-01F .dropdown-content a:hover {
+    background-color: $white;
+    width: 150px;
+    color: $lgray; 
+  }
+  .nav-01H .dropdown:hover .dropdown-content, .nav-01V .dropdown:hover .dropdown-content, .nav-01F .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+@media screen and (min-width:684px) {
+    #wrapper {
+        max-width: 1200px;
+    }
+    // section {
+    //     border: solid 2px #999;
+    // }
+    #nav-H, #nav-V {
+        padding: 0;
+    }
+    #nav-H label, #nav-V label {
+        display: none;
+    }
+    #nav-H nav, #nav-V nav {
+        height: auto;
+        overflow: visible;
+    }
+    #nav-H ul, #nav-V ul {
+        border: 0;
+        margin: 0;
+    }
+    #nav-H li {
+        display: inline-block;
+        border: none;
+    }
+    .nav-OH1 li {
+        display: inline-block;
+        border: none;
+    }
+    .nav-OV1 li {
+        border: none;
+    }
+    .nav-01H li div a {
+        display: block;
+    }
+    .nav-01H div .dropdown-content {
+        margin-left: 0;
+    }
+    .nav-01V div .dropdown-content {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width:820px) {
+    #wrapper {
+        max-width: 1200px;
+    }
+    // section {
+    //     border: solid 2px #999;
+    // }
+    #nav-F {
+        padding: 0;
+    }
+    #nav-F label {
+        display: none;
+    }
+    #nav-F nav {
+        height: auto;
+        overflow: visible;
+    }
+    #nav-F ul {
+        border: 0;
+        margin: 0;
+    }
+    #nav-F li {
+        display: inline-block;
+        border: none;
+    }
+    .nav-OF1 li {
+        display: inline-block;
+        border: none;
+    }
+  
+    .nav-01F li div a {
+        display: block;
+    }
+    .nav-01F div .dropdown-content {
+        margin-left: 0;
+    }
+  
+}

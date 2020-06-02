@@ -1,0 +1,51 @@
+        /********** start classes for all tabbed panels component ***********/
+         /* Style the horizontal tabs */
+         .htabs{ border: solid 1px $gray; padding: 2em .2em; margin: 2em 0;}
+         .hpanelh{padding: 1em; border-bottom: solid 1px $gray;}
+
+         .hpanelb{ padding: 2em; min-height: 150px;}
+
+
+         .hpanelh ul li {  display: inline-block; } 
+         /* Style the vertical tabs */            
+         .vtabs{ border: solid 1px $gray; padding: 2em .2em;}
+         .vpanelh{padding: 1em; border-right: solid 1px $gray;}
+  
+         .vpanelb{ min-height: 150px;}
+      
+
+         .vpanelh ul li{ display: block;} 
+         /********** start common classes for all tabs ***********/
+          /* Style the links inside the tab header */
+         .panelh ul li {
+             padding: 1em .5em;
+             margin: .25em;
+             width: auto;
+            //  border: none;
+             outline: none;
+             text-align: left;
+             cursor: pointer;
+             transition: 0.3s;
+             font-size: 17px;
+            //  @media (max-width: 420px){
+             @include break($breakpoint-xs){
+                padding: 1em 1em;
+             }
+             @include break($breakpoint-md){
+                padding: 1.5em 2em;
+
+             }
+         }    
+         /* Change background color of buttons on hover */
+        //  .panelh li:hover{
+        //      background-color: $white2;
+        //      color: $gray;
+        //      border: solid 1px $gray;
+        //  }
+         /* Create an active/current "tab button" class */
+        //  .panelh li.active {
+        //      background-color: $white2;
+        //      color: $gray;
+        //      border: solid 1px $gray;        }
+
+         /********** end classes for all tabbed panels component ***********/  

@@ -1,0 +1,53 @@
+
+
+//border color - pass 3 parameters type, thickness,color- how will the user use it unless they are using sass
+@mixin border($args...){
+    border: nth($args, 1),nth($args, 2), nth($args, 3);
+}
+
+// class for no print noprint
+@media print { 
+    .cl-noprint { 
+       visibility: hidden; 
+    } 
+}
+
+//clear floats
+@mixin clearfix{
+    &:before, &:after{
+        content: '';
+        display: table; 
+    }
+    &:after{
+        clear: both;
+    }
+}
+
+// for applying media query
+@mixin break($length) {
+    @media (min-width: $length){
+        @content;
+    }
+}
+
+@mixin break($args...) { //args... allows it to accept any number of arguments
+    @if length($args) == 1 {
+       @media screen and (min-width: nth($args, 1)) {
+           @content;
+       }
+   }
+   @if length($args) == 2 {
+       @media screen and (min-width: nth($args, 1)) and 
+               (max-width: nth($args, 2)){
+           @content;
+       }
+   }    
+}
+
+// for applying media query at max-width
+@mixin breakmax($length) {
+    @media (max-width: $length){
+        @content;
+    }
+}
+

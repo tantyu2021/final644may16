@@ -1,0 +1,244 @@
+/* 
+This file has classes for
+bodycopy/paragraphs, inline text elements, alignments, abbreviations/addreses/bloackquote, text transformations, text shadows,border styles,LISTS (ul/ol), margin classes, padding classes
+*/
+
+/*text sixes
+screen   0-360px     361-640px      641-768px   768+
+p       1.4em         1.6em          1.8em      1.9em
+h1      1.9em         2.0em          2.3em      3em
+h2      1.8em         1.9em          2.1em      2.8em
+h3      1.7em         1.8            2.0em      2.5em
+h4      1.6em         1.7            1.9        2.0
+h5      1.5em         1.6            1.8        1.9
+h6      1.5em         1.6            1.8        1.9
+*/
+
+// new numbers
+
+// screen   0-360px     361-640px      641-768px   768+
+//          (xs)           (sm)          (md)      (lg)
+// p        1em           1.2em          1.3em      1.3em
+// h1       1.9em         2.0em          2.3em      3em
+// h2       1.8em         1.9em          2.1em      2.8em
+// h3       1.7em         1.8            2.0em      2.5em
+// h4       1.6em         1.7            1.9        2.0
+// h5       1.5em         1.6            1.8        1.9
+// h6       1.5em         1.6            1.8        1.9
+
+
+
+$txt-size-xs: 1em;
+$txt-size-sm: 1.2em;
+$txt-size-md: 1.3em;
+$txt-size-lg: 1.3em;
+
+// size of text and headings according to media query breakpoints
+
+@media screen and (min-width: $breakpoint-xs){ 
+    p, li, a{ font-size: $txt-size-xs; padding: .1rem 0}
+    h1, .h1{font-size: 1.9em;}
+    h2, .h2{font-size: 1.8em;}
+    h3, .h3{font-size: 1.7em;}
+    h4, .h4{font-size: 1.6em;}
+    h5, .h5{font-size: 1.5em;}
+    h6, .h6{font-size: 1.5em;}
+}
+@media screen and (min-width: $breakpoint-sm){
+    p,li,a{ font-size: $txt-size-sm; }
+    h1, .h1{font-size: 2em;}
+    h2, .h2{font-size: 1.9em;}
+    h3, .h3{font-size: 1.8em;}
+    h4, .h4{font-size: 1.7em;}
+    h5, .h5{font-size: 1.6em;}
+    h6, .h6{font-size: 1.6em;}
+}
+@media screen and (min-width: $breakpoint-md){
+    p,li,a{ font-size: $txt-size-md; }
+    h1, .h1{font-size: 2.3em;}
+    h2, .h2{font-size: 2.1em;}
+    h3, .h3{font-size: 2em;}
+    h4, .h4{font-size: 1.9em;}
+    h5, .h5{font-size: 1.8em;}
+    h6, .h6{font-size: 1.8em;}
+}
+@media screen and (min-width: $breakpoint-lg){
+    p,li,a{ font-size: $txt-size-lg; }
+    h1, .h1{font-size: 3em;}
+    h2, .h2{font-size: 2.8em;}
+    h3, .h3{font-size: 2.5em;}
+    h4, .h4{font-size: 2em;}
+    h5, .h5{font-size: 1.9em;}
+    h6, .h6{font-size: 1.9em;}
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{ 
+    text-align: center;
+    font-weight: bold;
+}
+
+/*******    bodycopy/paragraphs font families  *********/
+.para{
+    padding: 1em .5em;
+    color: $black;
+}
+
+.cl-font-balsamiq{ font-family: 'Balsamiq Sans', cursive;}
+.cl-font-caveat{ font-family: 'Caveat Brush', cursive;}
+.cl-font-cookie{ font-family: 'Cookie', cursive;}
+.cl-font-dancing-script{ font-family: 'Dancing Script', cursive;}
+.cl-font-lato{ font-family: 'Lato', sans-serif;}
+.cl-font-lobster{ font-family: 'Lobster', cursive;}
+.cl-font-open-sans{ font-family: 'Open Sans', sans-serif;}
+.cl-font-poppins{ font-family: 'Poppins', sans-serif;}
+.cl-font-satisfy{ font-family: 'Satisfy', cursive;}
+
+.cl-san-serif{  font-family: $cl-font-san-serif; }
+.cl-mono{   font-family: $cl-font-mono;  }
+.cl-writing{    font-family: $cl-fontwriting;}
+.cl-disp{   font-family: $cl-font-disp;}
+
+/*******inline text elements   *********/
+.cl-bold{font-weight: bold;}
+.cl-italic{font-style: italic;}
+.cl-cite{font-style: italic;}
+
+//background for code display
+.cl-code{
+    font-family: monospace;
+    color: $code;    
+    padding: .2em ;
+    font-size: 90%;
+    background-color: $white2;
+}
+
+.cl-var{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+/*******abbreviations/addreses/bloackquote   *********/
+.cl-abbr{
+    font-weight:bold;
+    display: inline;
+}
+.cl-address{
+    display:block;
+    font-style: italic;
+    font-size: 95%;    
+}
+.cl-blockquote{
+    display: block;
+    margin: 1em;
+    font-size: 105%; 
+}
+
+/*******    text transformations   *********/
+.cl-txt-upper{text-transform: uppercase;}
+.cl-txt-lower{text-transform: lowercase;}
+.cl-txt-capital{text-transform: capitalize;}
+
+/*******    text shadows   *********/
+.cl-txt-shadow1{text-shadow: 2px 2px 4px $black;}
+.cl-txt-shadow2{ text-shadow:0 0 3px #ff0000, 0 0 5px #0000ff};
+
+//border styles
+.cl-bs-solid{border: solid .1em $lgray;}
+.cl-bs-groove{ border: groove .2em $lgray;}
+.cl-bs-dotted{ border: dotted .1em $lgray;}
+.cl-bs-outset{ border: outset .2em $lgray;}
+.cl-bs-dashed{ 
+    border: dashed 1px $lgray;
+    // border-style: double;
+    // border-width: 1px;
+    // border-color: $lgray;
+}
+
+
+/*******    LISTS (ul/ol)  *********/
+.cl-inline{
+    display: inline;
+}
+.cl-inline-blk{
+    display: inline-block;
+}
+.cl-inline-blk-list li{
+    display: inline-block;
+}
+.cl-blk{
+    display: block;
+}
+
+// list style position for ul and ol
+.cl-lsp-in{     list-style: inside; }
+.cl-lsp-out{   list-style: outside; }
+hr, .hr {
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.8);
+    @include break($breakpoint-md){
+        margin-top: .4em; margin-bottom: .4em;
+    }
+}
+
+
+/*******   margin classes    *********/
+//margin on all sides
+.m5{    margin: .5em;  }
+.m10{    margin: 1em;  }
+//margin on left and right
+.mx5{   margin: 0 .5em;}
+.mx10{   margin: 0 1em;}
+//margin on top and bottom
+.my5{   margin: .5em 0;}
+.my10{   margin: 1em 0;}
+
+/*******   padding classes    *********/
+//padding on all sides
+.p5{    padding: .5em;  }
+.p10{    padding: 1em;  }
+//padding on left and right
+.px5{   padding: 0 .5em;}
+.px10{   padding: 0 1em;}
+//padding on top and bottom
+.py5{   padding: .5em 0;}
+.py10{   padding: 1em 0;}
+
+/*******  Alignments *********/
+/*******   horizontal alignments   *********/
+.cl-align-left{text-align: left;}
+.cl-align-right{text-align: right;}
+.cl-align-center{text-align: center;}
+
+/*******   vertical alignments   *********/
+.cl-valign-top{vertical-align: top;}
+.cl-valign-bottom{vertical-align: bottom;}
+.cl-valign-center{vertical-align: middle;}
+
+/*******   horizontal alignments for flex rows  *********/
+.cl-flex-h-start{justify-content: flex-start;}
+.cl-flex-h-end{justify-content: flex-end;}
+.cl-flex-h-center{justify-content: center;}
+.cl-flex-h-sp-around{justify-content: space-around;}
+.cl-flex-h-sp-between{justify-content: space-between;}
+
+/*******   vertical alignments for flex rows  *********/
+.cl-flex-v-start{align-content: flex-start;}
+.cl-flex-v-end{align-content: flex-end;}
+.cl-flex-v-center{align-content: center;}
+.cl-flex-v-sp-around{align-content: space-around;}
+.cl-flex-v-sp-between{align-content: space-between;}
+
+/*******   vertical alignments for flex items in same row *********/
+.cl-flex-i-center{align-items: center;}
+.cl-flex-i-start{align-items: flex-start;}
+.cl-flex-i-end{align-items: flex-end;}
+.cl-flex-i-stretch{align-items: stretch;}
+.cl-flex-i-baseline{align-items: baseline;}
+
+/*******   self alignments for flex items   *********/
+.cl-self-vcenter{align-self: center;}
+.cl-self-hcenter{justify-self: center;}
+.cl-self-center{justify-self: center; align-self: center;  }

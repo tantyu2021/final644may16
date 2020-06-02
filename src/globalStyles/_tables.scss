@@ -1,0 +1,182 @@
+//BASIC TABLE STYLING
+.cl-highlight-green{background-color: #68ed7e;}
+.cl-highlight-yellow{ background-color: #f2fa19;}
+.cl-highlight-alert{ background-color: #f78b1e; }
+
+//odd-even-colors for the 3 themes
+.cl-even{background-color: transparentize($cl-evenrow, .6);}
+.cl-odd{background-color: transparentize($cl-oddrow, .6);}
+
+.cl-even-hover :hover{background-color: transparentize($cl-evenrow, .6);}
+.cl-odd-hover:hover{background-color: transparentize($cl-oddrow, .6);}
+
+.cl-table-basic{
+        // border-collapse: separate;
+    box-sizing: border-box;
+    border-spacing: 2px;
+    border: solid .1em $lgray;
+    // border-color: $lgrayy;
+    caption{ font-weight: bold; padding: .5em 0;}
+    thead{
+        border-top: solid .1em $blue2;
+        border-bottom: solid .1em $blue2;
+        tr{ 
+            padding: 1em .5em;
+            th{ padding: .4em;}
+        }
+    }
+    tbody{
+        tr{padding: 1.5em;
+            td{ padding: .8em .3em;}
+        }
+    }
+}
+
+
+// table styling for fully loaded styling with theme basic - a
+.cl-table {
+	background-color: $tbl-background;
+    border-collapse: collapse;
+    border-spacing:0;
+    width: 95%;
+	// float: left;
+    margin: 0 2% 2em;
+    height: 100%;
+	caption{
+		text-align: left;
+		padding: .5em .5em;
+		color: $tbl-caption;
+	  }
+    thead {
+		border: .1em solid $tbl-border;
+        background-color: $tbl-hdr-background;
+        tr{
+            padding: 0 1em;}
+        th {
+            padding: 0.35em 0 .35em;
+            font-weight: 400;
+            text-align: left;
+            font-size: 1.25em;
+            vertical-align: -webkit-baseline-middle;
+            vertical-align: middle;
+        }        
+    }
+
+    tbody {
+        tr {
+            padding: 0 1em;
+            box-shadow: 0px 2px 5px 0px $gray;
+			&:nth-child(odd){
+                background-color: transparentize($cl-oddrow, .7);
+                    &:hover{
+                        background-color: opacify($cl-oddrow, .3);
+                    }
+                }             
+			&:nth-child(even){
+                background-color: transparentize($cl-evenrow, .7);
+                    &:hover{
+                        background-color: opacify($cl-evenrow, .3);
+                    }
+                }  
+            td {
+                padding: .75em .5em;
+                a {
+                    color: $tbl-link;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin: 0 .5em 0 0;
+                    &:hover, &:active, &:focus {
+                        color: darken($tbl-link, 10%);
+                        border: none;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    tfoot {
+        td {
+            padding: 0.35em .35em .35em 1.5em;
+            text-align: left;
+            font-size: 1.25em;
+        }
+    }
+}
+
+///RWD MIXIN BELOW
+@mixin rwd-first {
+    display: block;
+    tbody {
+        border: none;
+    }
+    tbody, th, td, tr, tfoot {  
+        display: block; 
+    }
+    thead { display: none;  }
+    tr {
+        // float: left;
+        width: 100%;
+        margin: 0 0 1em;
+        border: 1px solid $gray;
+        border-bottom: solid 1px #fff;
+        box-shadow: 0px 2px 5px 0px $gray;
+        border-radius: 4px;
+        border-top: 1px solid $tbl-border;
+        td {
+            padding: .5em .5em .5em 50%; //left padding 50% to allow space for headings
+            // float:left;
+            width: 100%;
+            &:before {
+                    width: 50%;
+                    display: block;
+                    float: left;
+                    padding: 0 .5em 0 1.5em;
+                    clear: both;
+                    font-size: 1.125em;
+                }
+            }
+        }
+}
+
+.cl-res-table-sm{
+    @media screen and(max-width: $breakpoint-sm){
+        caption{
+            display: table-header-group;
+        }
+        @include rwd-first;
+        td:nth-of-type(1):before {content: "Heading Col1"; }
+        td:nth-of-type(2):before {content: "Heading Col2"; }
+        td:nth-of-type(3):before {content: "Heading Col3"; }
+    }
+
+}
+.cl-res-table-md{
+    @media screen and(max-width: $breakpoint-md){
+        caption{
+            display: table-header-group;
+        }
+        @include rwd-first;
+        td:nth-of-type(1):before {content: "Heading Col1"; }
+        td:nth-of-type(2):before {content: "Heading Col2"; }
+        td:nth-of-type(3):before {content: "Heading Col3"; }
+        td:nth-of-type(4):before {content: "Heading Col4"; }
+
+    }
+}
+.cl-res-table-lg{
+    @media screen and(max-width: $breakpoint-lg){
+        caption{
+            display: table-header-group;
+        }
+        @include rwd-first;
+        td:nth-of-type(1):before {content: "Heading Col1"; }
+        td:nth-of-type(2):before {content: "Heading Col2"; }
+        td:nth-of-type(3):before {content: "Heading Col3"; }
+        td:nth-of-type(4):before {content: "Heading Col4"; }
+        td:nth-of-type(5):before {content: "Heading Col5"; }
+        td:nth-of-type(6):before {content: "Heading Col6"; }
+        td:nth-of-type(7):before {content: "Heading Col7"; }
+        td:nth-of-type(8):before {content: "Heading Col8"; }  
+    }
+}

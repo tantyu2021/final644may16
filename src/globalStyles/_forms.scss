@@ -1,0 +1,60 @@
+// Default styles for form elements
+// width height padding, margin(?) box-shadows border-radius
+
+fieldset{
+    border:2px solid #ccc;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;	
+    border-radius:4px;	
+    margin: 1%;
+}
+legend{
+    font-size: 120%;
+    font-weight: bold;
+}
+label{ 
+    font-size: 120%; 
+    font-weight: bold;
+    vertical-align: -webkit-baseline-middle; 
+    vertical-align: middle ;
+}
+
+input,select,datalist{
+    width: 50%;
+    height: 120%;
+    padding: .5em;
+    margin: 1%;         
+    border: solid 1px #ccc;    
+    box-shadow: 1px 1px .5px #ccc;
+    @include break($breakpoint-sm){
+        height: 110%;
+    }
+    @include break($breakpoint-md){
+        height: 100%;
+    }
+}
+input[type=button],input[type=submit], input[type=reset]{
+    width: auto; height: initial;
+}
+input[type=checkbox]{
+width: initial;
+height: initial;
+/* border: solid 1px #000; */
+outline: solid 1px #ccc;
+margin: .5%;
+box-shadow: none;      
+}
+input[type=radio]{
+width: initial;
+height: initial;
+margin: .5%;
+outline-offset: 1.5px;
+outline: solid 1px #ccc;
+}
+
+textarea{
+    width: 50%;
+    padding: .5em;
+    margin: 1%;             
+    box-shadow: 1px 1px .5px #ccc;
+}

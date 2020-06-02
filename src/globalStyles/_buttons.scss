@@ -1,0 +1,92 @@
+// all classes for buttons
+
+button, .cl-btn{
+    background-color: $button-background;
+    color: $dgray;
+    border: solid 1px $button-border;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+    padding: .4em .8em;
+    border-radius: 1px;
+    &:hover{
+      background-color: $dgray;
+      color: $button-background;
+    }
+    &:active{
+      background-color: $dgray;
+      color: $button-background;
+      border: solid 1px $mgray;
+    }
+
+}
+
+ input[type=button], .cl-btn-input{    
+    padding: 5px;
+    border: solid 1px $button-border;
+    background: $button-background;
+    cursor: pointer;
+    &:hover{
+      background-color: $dgray;
+      color: $button-background;
+    }
+    &:active{
+      background-color: $dgray;
+      color: $button-background;
+      border: solid 1px $mgray;
+    }
+}
+ input[type=submit], .cl-btn-submit{
+    padding: 5px;
+    border: solid 1px $button-border;
+    background: $button-background;
+    cursor: pointer;
+    &:hover{
+      background-color: $dgray;
+      color: $button-background;
+    }
+    &:active{
+      background-color: $dgray;
+      color: $button-background;
+      border: solid 1px $mgray;
+    }
+ }
+ input[type=reset], .cl-btn-reset{
+    padding: 5px;
+    border: solid 1px $button-border;
+    background: $button-background;
+    cursor: pointer;
+    &:hover{
+      background-color: $dgray;
+      color: $button-background;
+    }
+    &:active{
+      background-color: $dgray;
+      color: $button-background;
+      border: solid 1px $mgray;
+    }
+ }
+ //sizes
+ .cl-btn-xsm{ font-size: 70%; margin: .1em 0;}
+.cl-btn-sm{ font-size: 90%; margin: .1em 0;}
+.cl-btn-lg{font-size: 120%; margin: .1em 0;}
+.cl-btn-xlg{font-size: 160%; margin: .1em 0;}
+
+//states
+.cl-btn-disabled{
+  opacity: 0.6;
+  cursor: none;
+  &:hover{
+    background-color: $button-background;
+    color: $dgray;
+  }
+}
+
+//styles
+.cl-btn-sharp{border-radius: 0;}
+.cl-btn-soft{border-radius: 5px;}
+.cl-btn-oval{border-radius: 25rem;}
+.cl-btn-round{border-radius: 50%;}
+.cl-btn-shadow{box-shadow: 2px -2px 1px $gray;}

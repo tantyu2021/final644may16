@@ -1,0 +1,51 @@
+//importing all fonts provided by framework
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Caveat+Brush&family=Cookie&family=Dancing+Script:wght@400;700&family=Lato:wght@300;400;700&family=Lobster&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500&family=Satisfy&display=swap');
+
+//variables to set breakpoints
+$breakpoint-xs: 420px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 960px;
+
+// basic colors  
+$white:  #fff;
+$black:  #000;
+$white2: #f7f7f7;// rgb(247, 247, 247)* header,footer color
+
+$lgray:  #dfdfdf; //rgb(194, 194, 194)
+$gray:   #c2c2c2; //rgb(194, 194, 194)
+$mgray:  #656666; //rgb(101, 102, 102)
+$dgray:  #1e1f1f; // rgb(30, 31, 31)
+$blue2:  #1d305c; //rgb(29, 48, 92) *head foot bgcolor, page txt, 
+$code:   #e61212; //
+
+$link:      #0c47c7;
+$lvisited:  #43088f;
+$lactive:   #5c89eb;
+$lhover:    #5c89eb;
+$lfocus:    #5c89eb;
+
+
+// variables for font-family
+$cl-font-san-serif: Poppins,Lato,'Open Sans', sans-serif;
+$cl-font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$cl-fontwriting: cookie, satisfy, "dancing-script" ,cursive;
+$cl-font-disp: "balsamiq sans",lobster, serif;
+
+//colors for changing default button style
+$button-background: $lgray;
+$button-border:$gray;
+
+//maybe set these to inherit from browser
+$font-family: inherit;
+$font-family-body: inherit;
+$text-color-default: $black;
+
+//color variables for tables
+$cl-evenrow: #d6e2df;
+$cl-oddrow: #98a1ac;
+$tbl-border: $dgray;
+$tbl-caption:rgb(151, 151, 209);
+$tbl-background: $white2; //rgb(223, 223, 247);
+$tbl-hdr-background: $lgray;
+$tbl-link: $link;
